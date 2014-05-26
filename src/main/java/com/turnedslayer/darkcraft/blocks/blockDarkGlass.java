@@ -10,6 +10,7 @@ import com.turnedslayer.darkcraft.libs.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockGlass;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.init.Blocks;
@@ -19,7 +20,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
 
-public class blockDarkGlass extends blockDarkCraft {
+public class blockDarkGlass extends Block {
 
     protected IIcon[] icons = new IIcon[16];
     private boolean shouldRenderSelectionBox = true;
