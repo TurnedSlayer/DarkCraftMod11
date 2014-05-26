@@ -50,7 +50,7 @@
       <file leaf-file-name="blockFancyBricks.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/blockFancyBricks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40257353" vertical-offset="376" max-vertical-offset="1156">
+            <state vertical-scroll-proportion="0.5275735" vertical-offset="308" max-vertical-offset="1156">
               <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1879,7 +1879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/blockFancyBricks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40257353" vertical-offset="376" max-vertical-offset="1156">
+        <state vertical-scroll-proportion="0.5275735" vertical-offset="308" max-vertical-offset="1156">
           <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
