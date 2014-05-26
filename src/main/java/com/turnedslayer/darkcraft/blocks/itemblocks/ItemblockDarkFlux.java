@@ -1,4 +1,4 @@
-package com.turnedslayer.darkcraft.blocks;
+package com.turnedslayer.darkcraft.blocks.itemblocks;
 
 import cofh.util.StringHelper;
 import net.minecraft.block.Block;

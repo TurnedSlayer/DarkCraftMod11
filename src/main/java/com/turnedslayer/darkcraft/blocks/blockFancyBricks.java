@@ -2,7 +2,6 @@ package com.turnedslayer.darkcraft.blocks;
 
 import com.turnedslayer.darkcraft.DarkCraft;
 import com.turnedslayer.darkcraft.help.Textures;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -15,11 +14,12 @@ import net.minecraft.util.IIcon;
 
 import java.util.List;
 
-
-
-public class blockFancy extends Block
+/**
+ * Created by TurnedSlayer.
+ */
+public class blockFancyBricks extends Block
 {
-    public blockFancy()
+    public blockFancyBricks()
     {
         super(Material.rock);
         this.setCreativeTab(DarkCraft.DarkCraftTab);
@@ -29,7 +29,7 @@ public class blockFancy extends Block
     @SideOnly(Side.CLIENT)
     private IIcon[] texture;
 
-    public static final String[] NAMES = { "DarkBlock", "DarkBlueBlock", "DarkRedBlock", "DarkGreenBlock", "DarkWhiteBlock" };
+    public static final String[] NAMES = { "DarkBricks", "DarkBlueBricks", "DarkRedBricks", "DarkGreenBricks", "DarkWhiteBricks" };
 
     @Override
     @SideOnly(Side.CLIENT)
@@ -62,6 +62,5 @@ public class blockFancy extends Block
     public int damageDropped(int meta) {
         return meta;
     }
-
 
 }

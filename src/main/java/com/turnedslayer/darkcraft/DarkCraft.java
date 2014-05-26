@@ -1,6 +1,7 @@
 package com.turnedslayer.darkcraft;
 
-import com.turnedslayer.darkcraft.blocks.ItemblockDarkFlux;
+import com.turnedslayer.darkcraft.blocks.itemblocks.ItemblockFancy;
+import com.turnedslayer.darkcraft.blocks.itemblocks.ItemblockDarkFlux;
 import com.turnedslayer.darkcraft.blocks.blockDarkFlux;
 import com.turnedslayer.darkcraft.blocks.blockDarkGlass;
 import com.turnedslayer.darkcraft.help.Gui.GuiHandler;
@@ -17,6 +18,7 @@ import com.turnedslayer.darkcraft.help.BlockHelper;
 import com.turnedslayer.darkcraft.help.ItemHelper;
 import net.minecraft.block.Block;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.blockFancy;
 
 @Mod(modid="turnedslayer_darkcraft", name="darkcraft Mod", version="0.0.1")
 public class DarkCraft{
@@ -35,7 +37,7 @@ public class DarkCraft{
     public static Block blockDarkGlass;
     public static Block blockDarkBasicFurnace;
     public static Block blockDarkFlux;
-
+    public static Block blockFancy;
 
     @Mod.Metadata
     public static ModMetadata metadata;
@@ -55,6 +57,8 @@ public class DarkCraft{
         //GameRegistry.registerBlock(blockDarkBasicFurnace, "blockDarkBasicFurnace");
         blockDarkFlux = new blockDarkFlux().setBlockName("blockDarkFlux").setCreativeTab(DarkCraft.DarkCraftTab);
         GameRegistry.registerBlock(blockDarkFlux, ItemblockDarkFlux.class, blockDarkFlux.getUnlocalizedName().replace("tile.",""));
+        blockFancy = new blockFancy().setBlockName("blockFancy");
+        GameRegistry.registerBlock(blockFancy, ItemblockFancy.class, blockFancy.getUnlocalizedName().replace("tile.", ""));
 
         BlockHelper.init();
 

@@ -27,9 +27,7 @@ public class blockDarkFlux extends Block
     public blockDarkFlux()
     {
         super(Material.iron);
-        //GameRegistry.registerBlock(this, "block");
-        //this.setCreativeTab(DarkCraft.DarkCraftTab);
-        //setBlockName("block");
+
 
 
 
