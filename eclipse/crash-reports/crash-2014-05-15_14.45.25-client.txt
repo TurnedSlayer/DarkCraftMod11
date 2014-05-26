@@ -1,0 +1,126 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 15/05/14 14:45
+Description: Rendering item
+
+java.lang.NullPointerException: Rendering item
+	at com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace.getIcon(blockDarkBasicFurnace.java:45)
+	at net.minecraft.block.Block.getBlockTextureFromSide(Block.java:690)
+	at net.minecraft.item.ItemBlock.getIconFromDamage(ItemBlock.java:51)
+	at net.minecraft.item.Item.getIconIndex(Item.java:457)
+	at net.minecraft.item.ItemStack.getIconIndex(ItemStack.java:133)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:416)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:560)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:291)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:118)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:672)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1143)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:910)
+	at net.minecraft.client.main.Main.main(Main.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace.getIcon(blockDarkBasicFurnace.java:45)
+	at net.minecraft.block.Block.getBlockTextureFromSide(Block.java:690)
+	at net.minecraft.item.ItemBlock.getIconFromDamage(ItemBlock.java:51)
+	at net.minecraft.item.Item.getIconIndex(Item.java:457)
+	at net.minecraft.item.ItemStack.getIconIndex(ItemStack.java:133)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:416)
+
+-- Item being rendered --
+Details:
+	Item Type: net.minecraft.item.ItemBlock@516e1c7c
+	Item Aux: 0
+	Item NBT: null
+	Item Foil: false
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemAndEffectIntoGUI(RenderItem.java:560)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146977_a(GuiContainer.java:291)
+	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:118)
+	at net.minecraft.client.renderer.InventoryEffectRenderer.drawScreen(InventoryEffectRenderer.java:44)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.drawScreen(GuiContainerCreative.java:672)
+
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+	Mouse location: Scaled: (138, 38). Absolute: (277, 403)
+	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['ForgeDevName'/252, l='MpServer', x=-1834.69, y=5.62, z=-958.51]]
+	Chunk stats: MultiplayerChunkCache: 225, 225
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1875,4,-972), Chunk: (at 13,0,4 in -118,-61; contains blocks -1888,0,-976 to -1873,255,-961), Region: (-4,-2; contains chunks -128,-64 to -97,-33, blocks -2048,0,-1024 to -1537,255,-513)
+	Level time: 61007 game time, 20689 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 94 total; [EntitySheep['Sheep'/136, l='MpServer', x=-1822.72, y=4.00, z=-879.56], EntityClientPlayerMP['ForgeDevName'/252, l='MpServer', x=-1834.69, y=5.62, z=-958.51], EntitySheep['Sheep'/143, l='MpServer', x=-1807.97, y=4.00, z=-1005.94], EntityCow['Cow'/142, l='MpServer', x=-1807.19, y=4.00, z=-990.85], EntityZombie['Zombie'/129, l='MpServer', x=-1817.44, y=4.00, z=-941.88], EntityZombie['Zombie'/128, l='MpServer', x=-1809.72, y=4.00, z=-988.25], EntityCreeper['Creeper'/131, l='MpServer', x=-1817.50, y=4.00, z=-899.50], EntityCreeper['Creeper'/130, l='MpServer', x=-1813.50, y=4.00, z=-896.50], EntityChicken['Chicken'/133, l='MpServer', x=-1812.47, y=4.00, z=-881.47], EntityCreeper['Creeper'/132, l='MpServer', x=-1821.97, y=4.00, z=-910.41], EntityCreeper['Creeper'/135, l='MpServer', x=-1816.94, y=4.00, z=-894.64], EntityCreeper['Creeper'/134, l='MpServer', x=-1815.25, y=4.00, z=-893.90], EntityCow['Cow'/154, l='MpServer', x=-1779.59, y=4.00, z=-1033.34], EntitySheep['Sheep'/155, l='MpServer', x=-1777.97, y=4.00, z=-1011.09], EntityCow['Cow'/156, l='MpServer', x=-1785.75, y=4.00, z=-1004.78], EntitySheep['Sheep'/157, l='MpServer', x=-1778.34, y=4.00, z=-999.19], EntitySkeleton['Skeleton'/158, l='MpServer', x=-1788.50, y=4.00, z=-992.50], EntityCreeper['Creeper'/159, l='MpServer', x=-1789.50, y=4.00, z=-976.50], EntitySkeleton['Skeleton'/144, l='MpServer', x=-1803.56, y=4.00, z=-986.16], EntitySheep['Sheep'/145, l='MpServer', x=-1794.75, y=4.00, z=-972.34], EntityPig['Pig'/146, l='MpServer', x=-1793.97, y=4.00, z=-964.97], EntityChicken['Chicken'/147, l='MpServer', x=-1792.19, y=4.00, z=-946.31], EntitySpider['Spider'/148, l='MpServer', x=-1796.78, y=4.00, z=-956.66], EntityZombie['Zombie'/149, l='MpServer', x=-1804.28, y=4.00, z=-899.91], EntityPig['Pig'/171, l='MpServer', x=-1782.97, y=4.00, z=-907.13], EntityItem['item.item.egg'/170, l='MpServer', x=-1778.44, y=4.13, z=-933.63], EntityPig['Pig'/169, l='MpServer', x=-1780.84, y=4.00, z=-934.38], EntitySheep['Sheep'/168, l='MpServer', x=-1776.75, y=4.00, z=-932.97], EntitySheep['Sheep'/175, l='MpServer', x=-1776.75, y=4.00, z=-892.66], EntityZombie['Zombie'/174, l='MpServer', x=-1791.84, y=4.00, z=-909.69], EntityPig['Pig'/173, l='MpServer', x=-1777.84, y=4.00, z=-908.81], EntityZombie['Zombie'/172, l='MpServer', x=-1789.91, y=4.00, z=-906.50], EntityZombie['Zombie'/163, l='MpServer', x=-1789.13, y=4.00, z=-950.69], EntityItem['item.item.egg'/162, l='MpServer', x=-1790.72, y=4.13, z=-946.47], EntityChicken['Chicken'/161, l='MpServer', x=-1787.31, y=4.00, z=-954.38], EntityCreeper['Creeper'/160, l='MpServer', x=-1778.59, y=4.00, z=-967.06], EntityChicken['Chicken'/167, l='MpServer', x=-1776.88, y=4.00, z=-934.22], EntityCreeper['Creeper'/166, l='MpServer', x=-1776.50, y=4.00, z=-957.50], EntitySpider['Spider'/165, l='MpServer', x=-1783.33, y=4.00, z=-958.55], EntityZombie['Zombie'/164, l='MpServer', x=-1780.72, y=4.00, z=-958.13], EntityChicken['Chicken'/186, l='MpServer', x=-1762.36, y=4.00, z=-996.90], EntityCow['Cow'/187, l='MpServer', x=-1773.22, y=4.00, z=-993.22], EntityCow['Cow'/184, l='MpServer', x=-1771.72, y=4.00, z=-1000.31], EntityCow['Cow'/185, l='MpServer', x=-1762.88, y=4.00, z=-1000.63], EntitySpider['Spider'/190, l='MpServer', x=-1772.00, y=4.00, z=-957.38], EntityPig['Pig'/191, l='MpServer', x=-1776.95, y=4.00, z=-929.41], EntitySheep['Sheep'/188, l='MpServer', x=-1769.50, y=4.00, z=-992.25], EntityZombie['Zombie'/189, l='MpServer', x=-1771.03, y=4.00, z=-959.47], EntitySkeleton['Skeleton'/58, l='MpServer', x=-1904.25, y=4.00, z=-904.69], EntityChicken['Chicken'/182, l='MpServer', x=-1762.75, y=4.00, z=-1015.44], EntityPig['Pig'/63, l='MpServer', x=-1893.03, y=4.00, z=-932.09], EntityZombie['Zombie'/62, l='MpServer', x=-1892.34, y=4.00, z=-1029.84], EntitySheep['Sheep'/183, l='MpServer', x=-1774.25, y=4.00, z=-1016.06], EntityChicken['Chicken'/181, l='MpServer', x=-1773.75, y=4.00, z=-1019.19], EntitySkeleton['Skeleton'/64, l='MpServer', x=-1888.79, y=4.00, z=-930.04], EntityPig['Pig'/201, l='MpServer', x=-1761.41, y=4.00, z=-892.84], EntityChicken['Chicken'/200, l='MpServer', x=-1761.56, y=4.00, z=-889.47], EntitySheep['Sheep'/203, l='MpServer', x=-1772.53, y=4.00, z=-893.97], EntityChicken['Chicken'/202, l='MpServer', x=-1771.38, y=4.00, z=-883.38], EntityChicken['Chicken'/197, l='MpServer', x=-1771.75, y=4.00, z=-905.25], EntityPig['Pig'/77, l='MpServer', x=-1881.34, y=4.00, z=-1034.72], EntitySheep['Sheep'/196, l='MpServer', x=-1767.06, y=4.00, z=-912.41], EntityItem['item.item.egg'/199, l='MpServer', x=-1772.59, y=4.13, z=-903.56], EntityZombie['Zombie'/78, l='MpServer', x=-1876.50, y=4.00, z=-1001.50], EntityZombie['Zombie'/198, l='MpServer', x=-1767.50, y=4.00, z=-908.50], EntitySkeleton['Skeleton'/79, l='MpServer', x=-1882.50, y=4.00, z=-935.50], EntityPig['Pig'/193, l='MpServer', x=-1762.72, y=4.00, z=-940.03], EntityPig['Pig'/192, l='MpServer', x=-1771.63, y=4.00, z=-932.94], EntityChicken['Chicken'/194, l='MpServer', x=-1771.44, y=4.00, z=-932.13], EntityPig['Pig'/220, l='MpServer', x=-1756.05, y=4.00, z=-938.22], EntitySheep['Sheep'/221, l='MpServer', x=-1756.41, y=4.00, z=-918.50], EntityPig['Pig'/81, l='MpServer', x=-1887.88, y=4.00, z=-882.22], EntitySkeleton['Skeleton'/80, l='MpServer', x=-1878.50, y=4.00, z=-933.50], EntityPig['Pig'/218, l='MpServer', x=-1758.06, y=4.00, z=-937.53], EntitySkeleton['Skeleton'/82, l='MpServer', x=-1872.50, y=4.00, z=-888.50], EntityCreeper['Creeper'/93, l='MpServer', x=-1870.22, y=4.00, z=-891.78], EntitySpider['Spider'/92, l='MpServer', x=-1857.53, y=4.00, z=-903.22], EntityZombie['Zombie'/91, l='MpServer', x=-1858.50, y=4.00, z=-905.50], EntitySpider['Spider'/90, l='MpServer', x=-1862.59, y=4.00, z=-925.72], EntitySpider['Spider'/100, l='MpServer', x=-1853.50, y=4.00, z=-899.50], EntitySlime['Slime'/99, l='MpServer', x=-1848.00, y=4.96, z=-962.67], EntitySkeleton['Skeleton'/110, l='MpServer', x=-1830.94, y=4.00, z=-932.00], EntitySkeleton['Skeleton'/111, l='MpServer', x=-1831.16, y=4.00, z=-929.41], EntitySkeleton['Skeleton'/108, l='MpServer', x=-1823.61, y=4.00, z=-959.47], EntitySkeleton['Skeleton'/109, l='MpServer', x=-1826.84, y=4.00, z=-935.38], EntityPig['Pig'/106, l='MpServer', x=-1836.34, y=4.00, z=-1026.25], EntitySheep['Sheep'/107, l='MpServer', x=-1832.76, y=4.00, z=-1005.27], EntitySheep['Sheep'/224, l='MpServer', x=-1755.06, y=4.00, z=-926.88], EntityZombie['Zombie'/114, l='MpServer', x=-1826.50, y=4.00, z=-887.50], EntityCreeper['Creeper'/113, l='MpServer', x=-1829.50, y=4.00, z=-902.50], EntityZombie['Zombie'/112, l='MpServer', x=-1835.50, y=4.00, z=-902.50], EntityZombie['Zombie'/127, l='MpServer', x=-1817.50, y=4.00, z=-995.50], EntityCreeper['Creeper'/126, l='MpServer', x=-1822.50, y=4.00, z=-1020.50], EntityCreeper['Creeper'/125, l='MpServer', x=-1813.75, y=4.00, z=-1036.75]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:412)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2521)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:932)
+	at net.minecraft.client.main.Main.main(Main.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 766806800 bytes (731 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 35759 (2002504 bytes; 1 MB) allocated, 5455 (305480 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.01-pre FML v7.2.156.1060 Minecraft Forge 10.12.1.1060 4 mods loaded, 4 mods active
+	mcp{8.09} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.2.156.1060} [Forge Mod Loader] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.12.1.1060} [Minecraft Forge] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	turnedslayer.darkcraft{0.0.1} [darkcraft Mod] (DarkCraftMod) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Launched Version: 1.7
+	LWJGL: 2.9.0
+	OpenGL: GeForce GTX 760/PCIe/SSE2 GL version 4.4.0, NVIDIA Corporation
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 1050 (58800 bytes; 0 MB) allocated, 242 (13552 bytes; 0 MB) used
+	Anisotropic Filtering: On (16)

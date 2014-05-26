@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="forge-1.7.2-10.12.1.1060-srg">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/tmp/decompile/forge-1.7.2-10.12.1.1060-srg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
