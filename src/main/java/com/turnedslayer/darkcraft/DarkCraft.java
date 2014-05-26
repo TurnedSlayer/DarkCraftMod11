@@ -1,5 +1,7 @@
 package com.turnedslayer.darkcraft;
 
+import com.turnedslayer.darkcraft.blocks.ItemblockDarkFlux;
+import com.turnedslayer.darkcraft.blocks.blockDarkFlux;
 import com.turnedslayer.darkcraft.blocks.blockDarkGlass;
 import com.turnedslayer.darkcraft.help.Gui.GuiHandler;
 import com.turnedslayer.darkcraft.libs.References;
@@ -32,6 +34,7 @@ public class DarkCraft{
     //blocks
     public static Block blockDarkGlass;
     public static Block blockDarkBasicFurnace;
+    public static Block blockDarkFlux;
 
 
     @Mod.Metadata
@@ -44,7 +47,14 @@ public class DarkCraft{
     @Mod.EventHandler()
     public void preInit(FMLPreInitializationEvent event)
     {
+        //Blocks
+        blockDarkGlass = new blockDarkGlass().setBlockName("blockDarkGlass");
+        GameRegistry.registerBlock(blockDarkGlass, "blockDarkGlass");
 
+        blockDarkBasicFurnace = new blockDarkBasicFurnace().setBlockName("blockDarkBasicFurnace");
+        //GameRegistry.registerBlock(blockDarkBasicFurnace, "blockDarkBasicFurnace");
+        blockDarkFlux = new blockDarkFlux().setBlockName("blockDarkFlux").setCreativeTab(DarkCraft.DarkCraftTab);
+        GameRegistry.registerBlock(blockDarkFlux, ItemblockDarkFlux.class, blockDarkFlux.getUnlocalizedName().replace("tile.",""));
 
         BlockHelper.init();
 
@@ -58,12 +68,7 @@ public class DarkCraft{
     @Mod.EventHandler()
     public void init(FMLInitializationEvent event)
     {
-        //Blocks
-        blockDarkGlass = new blockDarkGlass().setBlockName("blockDarkGlass");
-        GameRegistry.registerBlock(blockDarkGlass, "blockDarkGlass");
 
-        blockDarkBasicFurnace = new blockDarkBasicFurnace().setBlockName("blockDarkBasicFurnace");
-        //GameRegistry.registerBlock(blockDarkBasicFurnace, "blockDarkBasicFurnace");
 
         //Gui Handler
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());

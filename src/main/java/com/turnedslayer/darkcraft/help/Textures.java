@@ -18,6 +18,7 @@ public class Textures {
     public static final String BLOCK_RESOURCE_LOCATION = "";
     public static final ResourceLocation BasicFurnace = getResourceLocation(BLOCK_RESOURCE_LOCATION + "blockDarkBasicFurnace");
     public static final ResourceLocation DarkGlass = getResourceLocation(BLOCK_RESOURCE_LOCATION + "blockDarkGlass");
+    public static final ResourceLocation DarkFlux = getResourceLocation(BLOCK_RESOURCE_LOCATION + "blockDarkFlux");
 
     private static ResourceLocation getResourceLocation(String location)
     {

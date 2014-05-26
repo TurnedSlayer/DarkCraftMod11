@@ -5,38 +5,32 @@ import net.minecraft.block.Block;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import com.turnedslayer.darkcraft.blocks.blockDarkFlux;
 
-public class ItemblockDarkFlux extends ItemBlock
-{
-    public ItemblockDarkFlux(Block block) {
-
+public class ItemblockDarkFlux extends ItemBlock {
+    public ItemblockDarkFlux(Block block)
+    {
         super(block);
         setHasSubtypes(true);
-        setMaxDamage(0);
     }
+
+
+    public static final String[] NAMES = { "DarkFlux", "DarkFluxCrystal" };
 
     @Override
-    public String getItemStackDisplayName(ItemStack item) {
-
-        return StringHelper.localize(getUnlocalizedName(item));
+    public String getUnlocalizedName(ItemStack itemStack) {
+        int i = itemStack.getItemDamage();
+        if (i < 0 || i >= NAMES.length) {
+            i = 0;
+        }
+        return super.getUnlocalizedName() + "." + NAMES[i];
     }
-
     @Override
-    public String getUnlocalizedName(ItemStack item) {
-
-        return "block" + blockDarkFlux.NAMES[item.getItemDamage()] + ".name";
+    public int getMetadata ( int meta)
+    {
+        return meta;
     }
 
-    @Override
-    public int getMetadata(int i) {
-
-        return i;
-    }
-
-    @Override
-    public EnumRarity getRarity(ItemStack stack) {
-
-        return EnumRarity.uncommon;
-    }
 
 }
+

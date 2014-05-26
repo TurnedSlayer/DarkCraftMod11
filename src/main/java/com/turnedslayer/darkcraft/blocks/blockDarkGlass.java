@@ -141,8 +141,13 @@ public class blockDarkGlass extends blockDarkCraft {
 
     @Override
     public boolean isOpaqueCube() {
-        return false;
+        return true;
     }
 
+    @Override
+    public boolean renderAsNormalBlock()
+    {
+        return false;
+    }
 
 }
