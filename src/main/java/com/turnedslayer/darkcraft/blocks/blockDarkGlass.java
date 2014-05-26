@@ -5,10 +5,15 @@ package com.turnedslayer.darkcraft.blocks;
  */
 
 import com.turnedslayer.darkcraft.DarkCraft;
+import com.turnedslayer.darkcraft.help.BlockHelper;
 import com.turnedslayer.darkcraft.libs.Strings;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -139,15 +144,16 @@ public class blockDarkGlass extends blockDarkCraft {
         return true;
     }
 
-    @Override
-    public boolean isOpaqueCube() {
-        return true;
-    }
 
     @Override
-    public boolean renderAsNormalBlock()
+    public Block setLightOpacity(int p_149713_1_) {
+        this.lightOpacity = 15;
+        return this;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public Item getItem(World p_149694_1_, int p_149694_2_, int p_149694_3_, int p_149694_4_)
     {
-        return false;
+        return Item.getItemFromBlock(DarkCraft.blockDarkGlass);
     }
-
 }
