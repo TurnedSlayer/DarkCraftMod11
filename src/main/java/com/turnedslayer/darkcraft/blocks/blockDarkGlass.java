@@ -157,4 +157,9 @@ public class blockDarkGlass extends Block {
     {
         return Item.getItemFromBlock(DarkCraft.blockDarkGlass);
     }
+
+    @Override
+    public boolean isOpaqueCube() {
+        return true;
+    }
 }

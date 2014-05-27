@@ -1,6 +1,6 @@
 package com.turnedslayer.darkcraft.help.Gui;
 
-import com.turnedslayer.darkcraft.blocks.TileDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.Container;
 import net.minecraft.entity.player.InventoryPlayer;

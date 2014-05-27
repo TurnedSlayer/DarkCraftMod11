@@ -1,6 +1,6 @@
 package com.turnedslayer.darkcraft.help.Gui;
 
-import com.turnedslayer.darkcraft.blocks.TileDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import com.turnedslayer.darkcraft.libs.References;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;

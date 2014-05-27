@@ -19,7 +19,7 @@ import com.turnedslayer.darkcraft.help.ItemHelper;
 import net.minecraft.block.Block;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
 import com.turnedslayer.darkcraft.blocks.blockFancy;
-
+//import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnaceActive;
 @Mod(modid="turnedslayer_darkcraft", name="darkcraft Mod", version="0.0.1")
 public class DarkCraft{
 
@@ -38,6 +38,7 @@ public class DarkCraft{
     public static Block blockDarkBasicFurnace;
     public static Block blockDarkFlux;
     public static Block blockFancy;
+    public static Block blockDarkBasicFurnaceActive;
 
     @Mod.Metadata
     public static ModMetadata metadata;

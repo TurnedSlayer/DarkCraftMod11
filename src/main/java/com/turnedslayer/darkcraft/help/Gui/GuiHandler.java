@@ -1,6 +1,6 @@
 package com.turnedslayer.darkcraft.help.Gui;
 
-import com.turnedslayer.darkcraft.blocks.TileDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;

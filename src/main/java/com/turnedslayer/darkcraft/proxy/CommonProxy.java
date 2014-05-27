@@ -1,6 +1,6 @@
 package com.turnedslayer.darkcraft.proxy;
 
-import com.turnedslayer.darkcraft.blocks.TileDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
