@@ -170,7 +170,7 @@ public class TileDarkBasicFurnace extends TileEntity
             }
         }
         if(flag1){
-            this.onInventory();
+            this.onInventoryChange();
         }
     }
 
