@@ -17,7 +17,7 @@ import net.minecraft.tileentity.TileEntity;
 /**
  * Created by TurnedSlayer.
  */
-public class TileDarkBasicFurnace extends TileEntity
+public class TileDarkBasicFurnace extends TileEntity implements IInventory
 {
 
     private final EnergyStorage storage;
@@ -43,10 +43,6 @@ public class TileDarkBasicFurnace extends TileEntity
         return this.slots.length;
     }
 
-    public ItemStack getStackInSlot(int i)
-    {
-        return this.slots[i];
-    }
 
     public ItemStack decrStackSize(int i, int j) {
         if(this.slots[i]!=null){
@@ -75,11 +71,9 @@ public class TileDarkBasicFurnace extends TileEntity
         return null;
     }
 
+
+
     public void setInventorySlotContents(int i, ItemStack itemstack) {
-        this.slots[i]=itemstack;
-        if(itemstack!=null && itemstack.stackSize>this.getInventoryStackLimit()){
-            itemstack.stackSize=this.getInventoryStackLimit();
-        }
     }
 
     public int getInventoryStackLimit() {
@@ -90,8 +84,29 @@ public class TileDarkBasicFurnace extends TileEntity
         return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord)!=this ? false : entityplayer.getDistanceSq((double)this.xCoord+0.5D, (double)this.yCoord+0.5D, (double)this.zCoord+0.5D)<=64.0D;
     }
 
-     public void closeChest() {
+    @Override
+    public void openInventory() {
 
+    }
+
+    @Override
+    public void closeInventory() {
+
+    }
+
+    @Override
+    public boolean hasCustomInventoryName() {
+        return false;
+    }
+
+    @Override
+    public String getInventoryName() {
+        return null;
+    }
+
+    @Override
+    public ItemStack getStackInSlot(int var1) {
+        return null;
     }
 
     public boolean isSmelting(){
@@ -170,7 +185,7 @@ public class TileDarkBasicFurnace extends TileEntity
             }
         }
         if(flag1){
-            this.onInventory();
+            this.markDirty();
         }
     }
 

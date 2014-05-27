@@ -11,7 +11,7 @@ public class GuiBasicFurnace extends GuiContainer
     /**
      * See TestGUI
      */
-    private static final ResourceLocation backgroundimage = new ResourceLocation(References.MODID.toLowerCase() + ":" + "textures/gui/BasicFurnace.png");
+    private static final ResourceLocation backgroundimage = new ResourceLocation(References.MODID.toLowerCase() + ":" + "textures/gui/Dark Furnace.png");
 
     public GuiBasicFurnace(InventoryPlayer inventoryPlayer, TileDarkBasicFurnace tileDarkBasicFurnace)
     {
