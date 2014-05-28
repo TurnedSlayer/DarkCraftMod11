@@ -185,11 +185,11 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
             }
         }
         if(flag1){
-<<<<<<< HEAD
+
             this.markDirty();
-=======
-            this.onInventoryChange();
->>>>>>> c67ff4b67eba87207c700f0aa0746e4f37264ada
+
+
+
         }
     }
 
