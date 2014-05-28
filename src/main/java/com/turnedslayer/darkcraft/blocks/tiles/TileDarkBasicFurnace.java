@@ -78,7 +78,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
 
 
     public void setInventorySlotContents(int par1, ItemStack par2ItemStack) {
-       // this.furnaceItemStacks[par1] = par2ItemStack;
+        this.furnaceItemStacks[par1] = par2ItemStack;
 
         if (par2ItemStack != null && par2ItemStack.stackSize > this.getInventoryStackLimit()) {
             par2ItemStack.stackSize = this.getInventoryStackLimit();
@@ -122,7 +122,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     @Override
     public ItemStack getStackInSlot(int par1)
     {
-        return null; //this.furnaceItemStacks[par1];
+        return this.furnaceItemStacks[par1];
     }
 
     public int getSizeInventory()
@@ -133,7 +133,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     public boolean isSmelting(){
         return this.burnTime>0;
     }
-
+/*
     private boolean canGrind(){
         if(this.furnaceItemStacks[0] == null){
             return false;
@@ -165,7 +165,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
             }
         }
     }
-
+*/
     public void updateEntity(){
         boolean flag = this.burnTime >0;
         boolean flag1 = false;
@@ -175,7 +175,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
         }
 
         if(!this.worldObj.isRemote){
-            if(this.burnTime==0 && this.canGrind()){
+            if(this.burnTime==0 ){
                 this.currentItemSmeltingTime = this.burnTime = getItemGrindTime(this.furnaceItemStacks[1]);
                 if(this.burnTime>0){
                     flag1=true;
@@ -188,12 +188,12 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
                 }
             }
 
-            if(this.isSmelting()&&canGrind()){
+            if(this.isSmelting()){
                 this.smeltingTime++;
 
                 if(this.smeltingTime == this.furnaceSpeed){
                     this.smeltingTime=0;
-                    this.grindItem();
+                    //this.grindItem();
                     flag1=true;
                 }
             }else{

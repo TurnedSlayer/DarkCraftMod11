@@ -45,13 +45,6 @@ public class ContainerBasicFurnace extends Container
         }
     }
 
-    public void addCraftingToCrafters(ICrafting par1ICrafting)
-    {
-        super.addCraftingToCrafters(par1ICrafting);
-        par1ICrafting.sendProgressBarUpdate(this, 0, this.tileDarkBasicFurnace.smeltingTime);
-        par1ICrafting.sendProgressBarUpdate(this, 1, this.tileDarkBasicFurnace.burnTime);
-        par1ICrafting.sendProgressBarUpdate(this, 2, this.tileDarkBasicFurnace.currentItemSmeltingTime);
-    }
 
     @Override
     public boolean canInteractWith(EntityPlayer var1)
