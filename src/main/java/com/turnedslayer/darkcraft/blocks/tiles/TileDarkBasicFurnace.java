@@ -1,6 +1,7 @@
 package com.turnedslayer.darkcraft.blocks.tiles;
 
 import cofh.api.energy.EnergyStorage;
+import cofh.api.energy.IEnergyHandler;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -12,49 +13,49 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraftforge.common.util.ForgeDirection;
 
 /**
  * Created by TurnedSlayer.
  */
-public class TileDarkBasicFurnace extends TileEntity implements IInventory
+public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEnergyHandler
 {
 
-    private final EnergyStorage storage;
+    protected EnergyStorage storage = new EnergyStorage(10000);
     private String localizedName;
-    private ItemStack[] slots = new ItemStack[3];
-    private static final int[] slots_top = new int[]{0};
-    private static final int[] slots_sides = new int[]{1};
-    private static final int[] slots_bottom = new int[]{2,1};
+    private static final int[] furnaceItemStacks_top = new int[]{0};
+    private static final int[] furnaceItemStacks_sides = new int[]{1};
+    private static final int[] furnaceItemStacks_bottom = new int[]{2,1};
     public int furnaceSpeed = 200;
     public int burnTime;
     public int currentItemSmeltingTime;
     public int smeltingTime;
+    private ItemStack[] furnaceItemStacks = new ItemStack[2];
+    private String field_145958_o;
 
     public TileDarkBasicFurnace()
     {
         super();
-        this.storage = new EnergyStorage(32000, 10000);
+
 
 
     }
 
-    public int getSizeInventory(){
-        return this.slots.length;
-    }
 
 
     public ItemStack decrStackSize(int i, int j) {
-        if(this.slots[i]!=null){
+        if(this.furnaceItemStacks[i]!=null){
             ItemStack itemstack;
-            if(this.slots[i].stackSize<=j){
-                itemstack=this.slots[i];
-                this.slots[i]=null;
+            if(this.furnaceItemStacks[i].stackSize<=j){
+                itemstack=this.furnaceItemStacks[i];
+                this.furnaceItemStacks[i]=null;
                 return itemstack;
             }else{
-                itemstack=this.slots[i].splitStack(j);
-                if(this.slots[i].stackSize==0){
-                    this.slots[i]=null;
+                itemstack=this.furnaceItemStacks[i].splitStack(j);
+                if(this.furnaceItemStacks[i].stackSize==0){
+                    this.furnaceItemStacks[i]=null;
                 }
                 return itemstack;
             }
@@ -63,9 +64,9 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     public ItemStack getStackInSlotOnClosing(int i) {
-        if(this.slots[i]!=null){
-            ItemStack itemstack=this.slots[i];
-            this.slots[i]=null;
+        if(this.furnaceItemStacks[i]!=null){
+            ItemStack itemstack=this.furnaceItemStacks[i];
+            this.furnaceItemStacks[i]=null;
             return itemstack;
         }
         return null;
@@ -73,7 +74,12 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
 
 
 
-    public void setInventorySlotContents(int i, ItemStack itemstack) {
+    public void setInventorySlotContents(int par1, ItemStack par2ItemStack) {
+       // this.furnaceItemStacks[par1] = par2ItemStack;
+
+        if (par2ItemStack != null && par2ItemStack.stackSize > this.getInventoryStackLimit()) {
+            par2ItemStack.stackSize = this.getInventoryStackLimit();
+        }
     }
 
     public int getInventoryStackLimit() {
@@ -81,7 +87,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     public boolean isUseableByPlayer(EntityPlayer entityplayer) {
-        return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord)!=this ? false : entityplayer.getDistanceSq((double)this.xCoord+0.5D, (double)this.yCoord+0.5D, (double)this.zCoord+0.5D)<=64.0D;
+        return this.worldObj.getTileEntity(this.xCoord, this.yCoord, this.zCoord) == this && entityplayer.getDistanceSq((double) this.xCoord + 0.5D, (double) this.yCoord + 0.5D, (double) this.zCoord + 0.5D) <= 64.0D;
     }
 
     @Override
@@ -95,18 +101,30 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     @Override
+    public boolean isItemValidForSlot(int var1, ItemStack var2) {
+        return false;
+    }
+
+    @Override
     public boolean hasCustomInventoryName() {
         return false;
     }
 
     @Override
-    public String getInventoryName() {
-        return null;
+    public String getInventoryName()
+    {
+        return this.hasCustomInventoryName() ? this.field_145958_o : "ContainerBasicFurnace";
     }
 
     @Override
-    public ItemStack getStackInSlot(int var1) {
-        return null;
+    public ItemStack getStackInSlot(int par1)
+    {
+        return null; //this.furnaceItemStacks[par1];
+    }
+
+    public int getSizeInventory()
+    {
+        return this.furnaceItemStacks.length;
     }
 
     public boolean isSmelting(){
@@ -114,16 +132,16 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     private boolean canGrind(){
-        if(this.slots[0] == null){
+        if(this.furnaceItemStacks[0] == null){
             return false;
         }else{
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
+            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
 
             if(itemstack == null) return false;
-            if(this.slots[2] == null) return true;
-            if(!this.slots[2].isItemEqual(itemstack)) return false;
+            if(this.furnaceItemStacks[2] == null) return true;
+            if(!this.furnaceItemStacks[2].isItemEqual(itemstack)) return false;
 
-            int result = this.slots[2].stackSize+itemstack.stackSize;
+            int result = this.furnaceItemStacks[2].stackSize+itemstack.stackSize;
 
             return (result<=getInventoryStackLimit()&&result<=itemstack.getMaxStackSize());
         }
@@ -131,16 +149,16 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
 
     private void grindItem(){
         if(this.canGrind()){
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.slots[0]);
-            if(this.slots[2]==null){
-                this.slots[2]=itemstack.copy();
-            }else if(this.slots[2].isItemEqual(itemstack)){
-                this.slots[2].stackSize+=itemstack.stackSize;
+            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+            if(this.furnaceItemStacks[2]==null){
+                this.furnaceItemStacks[2]=itemstack.copy();
+            }else if(this.furnaceItemStacks[2].isItemEqual(itemstack)){
+                this.furnaceItemStacks[2].stackSize+=itemstack.stackSize;
             }
-            this.slots[0].stackSize--;
+            this.furnaceItemStacks[0].stackSize--;
 
-            if(this.slots[0].stackSize<=0){
-                this.slots[0]=null;
+            if(this.furnaceItemStacks[0].stackSize<=0){
+                this.furnaceItemStacks[0]=null;
             }
         }
     }
@@ -155,13 +173,13 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
 
         if(!this.worldObj.isRemote){
             if(this.burnTime==0 && this.canGrind()){
-                this.currentItemSmeltingTime = this.burnTime = getItemGrindTime(this.slots[1]);
+                this.currentItemSmeltingTime = this.burnTime = getItemGrindTime(this.furnaceItemStacks[1]);
                 if(this.burnTime>0){
                     flag1=true;
-                    if(this.slots[1] !=null){
-                        this.slots[1].stackSize--;
-                        if(this.slots[1].stackSize == 0){
-                            this.slots[1] = this.slots[1].getItem().getContainerItem(this.slots[1]);
+                    if(this.furnaceItemStacks[1] !=null){
+                        this.furnaceItemStacks[1].stackSize--;
+                        if(this.furnaceItemStacks[1].stackSize == 0){
+                            this.furnaceItemStacks[1] = this.furnaceItemStacks[1].getItem().getContainerItem(this.furnaceItemStacks[1]);
                         }
                     }
                 }
@@ -193,9 +211,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
         }
     }
 
-    public boolean isItemValidForSlot(int i, ItemStack itemstack) {
-        return i==2 ? false : (i==1 ? isItemFuel(itemstack):true);
-    }
+
 
     private boolean isItemFuel(ItemStack itemstack) {
         return getItemGrindTime(itemstack)>0;
@@ -243,7 +259,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     public int[] getAccessibleSlotsFromSide(int var1) {
-        return var1==0 ? slots_bottom : (var1==1 ? slots_top : slots_sides);
+        return var1==0 ? furnaceItemStacks_bottom : (var1==1 ? furnaceItemStacks_top : furnaceItemStacks_sides);
     }
 
     public boolean canInsertItem(int i, ItemStack itemstack, int j) {
@@ -266,12 +282,38 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory
     }
 
     public void readFromNBT(NBTTagCompound nbt){
+        super.readFromNBT(nbt);
+        storage.readFromNBT(nbt);
 
     }
     public void writeToNBT(NBTTagCompound nbt){
-
+        super.writeToNBT(nbt);
+        storage.writeToNBT(nbt);
     }
 
 
+    @Override
+    public int receiveEnergy(ForgeDirection from, int maxReceive, boolean simulate) {
+        return storage.receiveEnergy(maxReceive, false);
+    }
 
+    @Override
+    public int extractEnergy(ForgeDirection from, int maxExtract, boolean simulate) {
+        return storage.extractEnergy(maxExtract, false);
+    }
+
+    @Override
+    public int getEnergyStored(ForgeDirection from) {
+        return storage.getEnergyStored();
+    }
+
+    @Override
+    public int getMaxEnergyStored(ForgeDirection from) {
+        return storage.getEnergyStored();
+    }
+
+    @Override
+    public boolean canConnectEnergy(ForgeDirection from) {
+        return true;
+    }
 }
