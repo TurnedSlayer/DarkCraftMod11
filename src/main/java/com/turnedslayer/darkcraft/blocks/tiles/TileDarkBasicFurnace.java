@@ -2,6 +2,7 @@ package com.turnedslayer.darkcraft.blocks.tiles;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
+import cofh.api.energy.IEnergyStorage;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
@@ -37,6 +38,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     public int smeltingTime;
     private ItemStack[] furnaceItemStacks = new ItemStack[2];
     private String field_145958_o;
+
 
     public TileDarkBasicFurnace()
     {
@@ -133,133 +135,98 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     public boolean isSmelting(){
         return this.burnTime>0;
     }
-/*
-    private boolean canGrind(){
-        if(this.furnaceItemStacks[0] == null){
-            return false;
-        }else{
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
 
-            if(itemstack == null) return false;
-            if(this.furnaceItemStacks[2] == null) return true;
-            if(!this.furnaceItemStacks[2].isItemEqual(itemstack)) return false;
+        private boolean canGrind(){
+            if(this.furnaceItemStacks[0] == null){
+                return false;
+            }else{
+                ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
 
-            int result = this.furnaceItemStacks[2].stackSize+itemstack.stackSize;
+                if(itemstack == null) return false;
+                if(this.furnaceItemStacks[1] == null) return true;
+                if(!this.furnaceItemStacks[1].isItemEqual(itemstack)) return false;
 
-            return (result<=getInventoryStackLimit()&&result<=itemstack.getMaxStackSize());
-        }
-    }
+                int result = this.furnaceItemStacks[1].stackSize+itemstack.stackSize;
 
-    private void grindItem(){
-        if(this.canGrind()){
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
-            if(this.furnaceItemStacks[2]==null){
-                this.furnaceItemStacks[2]=itemstack.copy();
-            }else if(this.furnaceItemStacks[2].isItemEqual(itemstack)){
-                this.furnaceItemStacks[2].stackSize+=itemstack.stackSize;
-            }
-            this.furnaceItemStacks[0].stackSize--;
-
-            if(this.furnaceItemStacks[0].stackSize<=0){
-                this.furnaceItemStacks[0]=null;
+                return (result<=getInventoryStackLimit()&&result<=itemstack.getMaxStackSize());
             }
         }
-    }
-*/
-    public void updateEntity(){
-        boolean flag = this.burnTime >0;
-        boolean flag1 = false;
 
-        if(this.burnTime>0){
-            this.burnTime--;
-        }
+            private void grindItem(){
+                if(this.canGrind()){
+                    ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+                    if(this.furnaceItemStacks[1]==null){
+                        this.furnaceItemStacks[1]=itemstack.copy();
+                    }else if(this.furnaceItemStacks[1].isItemEqual(itemstack)){
+                        this.furnaceItemStacks[1].stackSize+=itemstack.stackSize;
+                    }
+                    this.furnaceItemStacks[0].stackSize--;
 
-        if(!this.worldObj.isRemote){
-            if(this.burnTime==0 ){
-                this.currentItemSmeltingTime = this.burnTime = getItemGrindTime(this.furnaceItemStacks[1]);
-                if(this.burnTime>0){
-                    flag1=true;
-                    if(this.furnaceItemStacks[1] !=null){
-                        this.furnaceItemStacks[1].stackSize--;
-                        if(this.furnaceItemStacks[1].stackSize == 0){
-                            this.furnaceItemStacks[1] = this.furnaceItemStacks[1].getItem().getContainerItem(this.furnaceItemStacks[1]);
-                        }
+                    if(this.furnaceItemStacks[0].stackSize<=0){
+                        this.furnaceItemStacks[0]=null;
                     }
                 }
             }
 
-            if(this.isSmelting()){
-                this.smeltingTime++;
 
-                if(this.smeltingTime == this.furnaceSpeed){
-                    this.smeltingTime=0;
-                    //this.grindItem();
-                    flag1=true;
+
+    public void updateEntity(){
+        boolean flag = this.burnTime > 0;
+        boolean flag1 = false;
+
+        if(this.burnTime==0 ){
+
+            --this.burnTime;
+        }
+
+        if (!this.worldObj.isRemote)
+        {
+
+
+
+            if (this.burnTime == 0 && this.canGrind())
+            {
+                this.currentItemSmeltingTime = this.burnTime = storage.getEnergyStored();
+
+                if (this.burnTime > 0)
+                {
+                    flag1 = true;
+
+
                 }
-            }else{
-                this.smeltingTime=0;
             }
 
-            if(flag!=this.burnTime>0){
-                flag1=true;
+            if (this.isSmelting() && this.canGrind())
+            {
+
+
+                ++this.smeltingTime;
+
+                if (this.smeltingTime == 200)
+                {
+                    this.smeltingTime = 0;
+                    this.grindItem();
+                    flag1 = true;
+                }
+            }
+            else
+            {
+                this.smeltingTime = 0;
+            }
+
+            if (flag != this.smeltingTime > 0)
+            {
+                flag1 = true;
                 blockDarkBasicFurnace.updateBlockState(this.burnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
             }
         }
-        if(flag1){
 
+        if (flag1)
+        {
             this.markDirty();
-
-
-
         }
     }
 
-
-
-    private boolean isItemFuel(ItemStack itemstack) {
-        return getItemGrindTime(itemstack)>0;
-    }
-
-    private int getItemGrindTime(ItemStack itemstack) {
-        if(itemstack==null){
-            return 0;
-        }else{
-            int i=itemstack.stackSize;
-            Item item = itemstack.getItem();
-
-            if (item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.air)
-            {
-                Block block = Block.getBlockFromItem(item);
-
-                if (block == Blocks.wooden_slab)
-                {
-                    return 150;
-                }
-
-                if (block.getMaterial() == Material.wood)
-                {
-                    return 300;
-                }
-
-                if (block == Blocks.coal_block)
-                {
-                    return 16000;
-                }
-            }
-
-            if(item instanceof ItemTool &&((ItemTool)item).getToolMaterialName().equals("WOOD")) return 200;
-            if(item instanceof ItemSword &&((ItemSword)item).getToolMaterialName().equals("WOOD"))return 200;
-            if(item instanceof ItemHoe && ((ItemHoe)item).equals("WOOD"))return 200;
-            if(item == Items.stick) return 100;
-            if(item == Items.coal) return 1600;
-            if(item == Items.lava_bucket)return 20000;
-            if(item == Items.blaze_rod)return 2400;
-            if (item == Item.getItemFromBlock(Blocks.sapling)) return 100;
-
-
-            return GameRegistry.getFuelValue(itemstack);
-        }
-    }
 
     public int[] getAccessibleSlotsFromSide(int var1) {
         return var1==0 ? furnaceItemStacks_bottom : (var1==1 ? furnaceItemStacks_top : furnaceItemStacks_sides);
@@ -333,4 +300,6 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
 
         return new S35PacketUpdateTileEntity(this.xCoord, this.yCoord, this.zCoord, 1, nbtTag);
     }
+
+
 }

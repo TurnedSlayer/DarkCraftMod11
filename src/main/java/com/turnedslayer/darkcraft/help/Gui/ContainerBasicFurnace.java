@@ -28,7 +28,7 @@ public class ContainerBasicFurnace extends Container
         this.tileDarkBasicFurnace = par2TileDarkBasicFurnace;
         this.addSlotToContainer(new Slot(par2TileDarkBasicFurnace, 0, 56, 17));
         //this.addSlotToContainer(new Slot(par2TileDarkBasicFurnace, 1, 56, 53));
-        this.addSlotToContainer(new SlotFurnace(par1InventoryPlayer.player, par2TileDarkBasicFurnace, 2, 116, 35));
+        this.addSlotToContainer(new SlotFurnace(par1InventoryPlayer.player, par2TileDarkBasicFurnace, 1, 116, 35));
         int i;
 
         for (i = 0; i < 3; ++i)
@@ -64,7 +64,7 @@ public class ContainerBasicFurnace extends Container
 
             if (par2 == 2)
             {
-                if (!this.mergeItemStack(itemstack1, 3, 39, true))
+                if (!this.mergeItemStack(itemstack1, 2, 39, true))
                 {
                     return null;
                 }
@@ -85,7 +85,7 @@ public class ContainerBasicFurnace extends Container
                     return null;
                 }
             }
-            else if (!this.mergeItemStack(itemstack1, 3, 39, false))
+            else if (!this.mergeItemStack(itemstack1, 2, 39, false))
             {
                 return null;
             }
@@ -116,8 +116,6 @@ public class ContainerBasicFurnace extends Container
         if(slot==1)this.tileDarkBasicFurnace.burnTime=par2;
         if(slot==2)this.tileDarkBasicFurnace.currentItemSmeltingTime=par2;
     }
-    public ItemStack transferStackInSlot(EntityPlayer player){
-        return null;
-    }
+
 
 }

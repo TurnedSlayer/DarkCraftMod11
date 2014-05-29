@@ -4,6 +4,7 @@ import com.turnedslayer.darkcraft.blocks.itemblocks.ItemblockFancy;
 import com.turnedslayer.darkcraft.blocks.itemblocks.ItemblockDarkFlux;
 import com.turnedslayer.darkcraft.blocks.blockDarkFlux;
 import com.turnedslayer.darkcraft.blocks.blockDarkGlass;
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import com.turnedslayer.darkcraft.help.Gui.GuiHandler;
 import com.turnedslayer.darkcraft.libs.References;
 import cpw.mods.fml.common.Mod;
@@ -20,6 +21,7 @@ import net.minecraft.block.Block;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
 import com.turnedslayer.darkcraft.blocks.blockFancy;
 //import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnaceActive;
+
 @Mod(modid="turnedslayer_darkcraft", name="darkcraft Mod", version="0.0.1")
 public class DarkCraft{
 
@@ -65,18 +67,16 @@ public class DarkCraft{
 
         ItemHelper.init();
 
-        //proxy.registerTileEntities();
-
     }
 
 
     @Mod.EventHandler()
     public void init(FMLInitializationEvent event)
     {
-
-
         //Gui Handler
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+        //Tile Entitys
+        GameRegistry.registerTileEntity(TileDarkBasicFurnace.class, "TileDarkBasicFurnace");
     }
 
 

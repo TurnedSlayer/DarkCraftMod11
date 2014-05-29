@@ -3,31 +3,19 @@ package cofh.api.tileentity;
 /**
  * Implement this interface on Tile Entities which can report information about their energy usage.
  * 
- * This is used for reporting purposes - Energy transactions are handled through IEnergyHandler!
+ * This is used for reporting purposes - Energy transactions should be handled through IEnergyHandler!
  * 
  * @author King Lemming
  * 
  */
 public interface IEnergyInfo {
 
-	/**
-	 * Returns energy usage/generation per tick (RF/t).
-	 */
-	public int getInfoEnergyPerTick();
+	public int getEnergyPerTick();
 
-	/**
-	 * Returns maximum energy usage/generation per tick (RF/t).
-	 */
-	public int getInfoMaxEnergyPerTick();
+	public int getMaxEnergyPerTick();
 
-	/**
-	 * Returns energy stored (RF).
-	 */
-	public int getInfoEnergy();
+	public int getEnergy();
 
-	/**
-	 * Returns maximum energy stored (RF).
-	 */
-	public int getInfoMaxEnergy();
+	public int getMaxEnergy();
 
 }

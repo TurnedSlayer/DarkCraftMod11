@@ -1,5 +1,6 @@
 package com.turnedslayer.darkcraft.help;
 
+import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import com.turnedslayer.darkcraft.blocks.*;
@@ -35,6 +36,7 @@ public static void init()
     public static void register(blockDarkCraft block)
     {
         GameRegistry.registerBlock(block, block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()));
+
     }
 
     public static void registerBlocksWithMetadata(blockDarkCraft block, Class<? extends ItemBlock> itemBlockClass, String name)

@@ -1,6 +1,6 @@
 package cofh.api.energy;
 
-import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraftforge.common.ForgeDirection;
 
 /**
  * Implement this interface on TileEntities which should handle energy, generally storing it in one or more internal {@link IEnergyStorage} objects.
@@ -10,7 +10,7 @@ import net.minecraftforge.common.util.ForgeDirection;
  * @author King Lemming
  * 
  */
-public interface IEnergyHandler extends IEnergyConnection {
+public interface IEnergyHandler {
 
 	/**
 	 * Add energy to an IEnergyHandler, internal distribution is left entirely to the IEnergyHandler.
@@ -37,6 +37,11 @@ public interface IEnergyHandler extends IEnergyConnection {
 	 * @return Amount of energy that was (or would have been, if simulated) extracted.
 	 */
 	int extractEnergy(ForgeDirection from, int maxExtract, boolean simulate);
+
+	/**
+	 * Returns true if the Handler functions on a given side - if a Tile Entity can receive or send energy on a given side, this should return true.
+	 */
+	boolean canInterface(ForgeDirection from);
 
 	/**
 	 * Returns the amount of energy currently stored.

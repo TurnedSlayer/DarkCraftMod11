@@ -1,8 +1,7 @@
 package cofh.api.world;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.WeightedRandom;
+import net.minecraft.util.WeightedRandomItem;
 
 /**
  * This class essentially allows for ores to be generated in clusters, with Features randomly choosing one or more blocks from a weighted list.
@@ -10,20 +9,22 @@ import net.minecraft.util.WeightedRandom;
  * @author King Lemming
  * 
  */
-public final class WeightedRandomBlock extends WeightedRandom.Item {
+public final class WeightedRandomBlock extends WeightedRandomItem {
 
-	public final Block block;
+	public final int blockId;
 	public final int metadata;
 
 	public WeightedRandomBlock(ItemStack ore) {
 
-		this(ore, 100);
+		super(100);
+		this.blockId = ore.itemID;
+		this.metadata = ore.getItemDamage();
 	}
 
 	public WeightedRandomBlock(ItemStack ore, int weight) {
 
 		super(weight);
-		this.block = Block.getBlockFromItem(ore.getItem());
+		this.blockId = ore.itemID;
 		this.metadata = ore.getItemDamage();
 	}
 

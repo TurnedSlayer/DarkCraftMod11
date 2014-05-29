@@ -1,0 +1,75 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 29/05/14 10:43
+Description: Exception ticking world
+
+java.lang.RuntimeException: class com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace is missing a mapping! This is a bug!
+	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:100)
+	at com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace.writeToNBT(TileDarkBasicFurnace.java:293)
+	at com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace.getDescriptionPacket(TileDarkBasicFurnace.java:332)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.sendTileToAllPlayersWatchingChunk(PlayerManager.java:521)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.sendChunkUpdate(PlayerManager.java:463)
+	at net.minecraft.server.management.PlayerManager.updatePlayerInstances(PlayerManager.java:94)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:194)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:682)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:604)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:742)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.tileentity.TileEntity.writeToNBT(TileEntity.java:100)
+	at com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace.writeToNBT(TileDarkBasicFurnace.java:293)
+	at com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace.getDescriptionPacket(TileDarkBasicFurnace.java:332)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.sendTileToAllPlayersWatchingChunk(PlayerManager.java:521)
+	at net.minecraft.server.management.PlayerManager$PlayerInstance.sendChunkUpdate(PlayerManager.java:463)
+	at net.minecraft.server.management.PlayerManager.updatePlayerInstances(PlayerManager.java:94)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:194)
+
+-- Affected level --
+Details:
+	Level name: Copy of Copy of Copy of New Worl
+	All players: 1 total; [EntityPlayerMP['TurnedSlayer'/369, l='Copy of Copy of Copy of New Worl', x=142.89, y=69.00, z=198.50]]
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: 7494902745962519000
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (144,64,192), Chunk: (at 0,4,0 in 9,12; contains blocks 144,0,192 to 159,255,207), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 829 game time, 829 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 72146 (now: false), thunder time: 75412 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:682)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:604)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:118)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:482)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:742)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 836540224 bytes (797 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 5017 (280952 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.01-pre FML v7.2.156.1060 Minecraft Forge 10.12.1.1060 4 mods loaded, 4 mods active
+	mcp{8.09} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.2.156.1060} [Forge Mod Loader] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.12.1.1060} [Minecraft Forge] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	turnedslayer_darkcraft{0.0.1} [darkcraft Mod] (DarkCraftMod) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 1182 (66192 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['TurnedSlayer'/369, l='Copy of Copy of Copy of New Worl', x=142.89, y=69.00, z=198.50]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
