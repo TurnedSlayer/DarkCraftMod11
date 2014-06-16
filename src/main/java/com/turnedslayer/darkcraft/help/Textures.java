@@ -20,6 +20,11 @@ public class Textures {
     public static final ResourceLocation DarkGlass = getResourceLocation(BLOCK_RESOURCE_LOCATION + "blockDarkGlass");
     public static final ResourceLocation DarkFlux = getResourceLocation(BLOCK_RESOURCE_LOCATION + "blockDarkFlux");
 
+    //Models
+    public static final String MODEL_RESOURCELOCATION = "textures/models";
+    public static final ResourceLocation BluesteelModel = getResourceLocation(RESOURCE_PREFIX + MODEL_RESOURCELOCATION + "Charged Bluesteel Layer");
+
+
     private static ResourceLocation getResourceLocation(String location)
     {
         return new ResourceLocation(References.MODID.toLowerCase(), location);

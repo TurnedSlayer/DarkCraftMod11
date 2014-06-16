@@ -13,4 +13,5 @@ public class References
     public static final String CLIENTPROXYLOCATION = MODID + ".proxy.ClientProxy";
     public static final String COMMONPROXYLOCATION = MODID + ".proxy.CommonProxy";
     public static final String RESOURCESPREFIX     = MODID + ":";
+    public static final String ARMORTEXTURES = MODID + (":/armor");
 }

@@ -3,15 +3,14 @@ package com.turnedslayer.darkcraft.help.Gui;
 import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
 import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.Container;
-import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
-import net.minecraft.tileentity.TileEntityFurnace;
 
 
 public class ContainerBasicFurnace extends Container
@@ -51,6 +50,7 @@ public class ContainerBasicFurnace extends Container
     {
         return true;
     }
+
     @Override
     public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int par2)
     {
@@ -115,6 +115,71 @@ public class ContainerBasicFurnace extends Container
         if(slot==0) this.tileDarkBasicFurnace.smeltingTime=par2;
         if(slot==1)this.tileDarkBasicFurnace.burnTime=par2;
         if(slot==2)this.tileDarkBasicFurnace.currentItemSmeltingTime=par2;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void PowerMeter(int power, int par2)
+    {
+
+    }
+
+    public void addCraftingToCrafters(ICrafting par1ICrafting)
+    {
+        super.addCraftingToCrafters(par1ICrafting);
+        par1ICrafting.sendProgressBarUpdate(this, 0, this.tileDarkBasicFurnace.smeltingTime);
+        par1ICrafting.sendProgressBarUpdate(this, 1, this.tileDarkBasicFurnace.burnTime);
+        par1ICrafting.sendProgressBarUpdate(this, 2, this.tileDarkBasicFurnace.currentItemSmeltingTime);
+    }
+
+    /**
+     * Looks for changes made in the container, sends them to every listener.
+     */
+    public void detectAndSendChanges()
+    {
+        super.detectAndSendChanges();
+
+        for (int i = 0; i < this.crafters.size(); ++i)
+        {
+            ICrafting icrafting = (ICrafting)this.crafters.get(i);
+
+            if (this.lastCookTime != this.tileDarkBasicFurnace.smeltingTime)
+            {
+                icrafting.sendProgressBarUpdate(this, 0, this.tileDarkBasicFurnace.smeltingTime);
+            }
+
+            if (this.lastBurnTime != this.tileDarkBasicFurnace.burnTime)
+            {
+                icrafting.sendProgressBarUpdate(this, 1, this.tileDarkBasicFurnace.burnTime);
+            }
+
+            if (this.lastItemBurnTime != this.tileDarkBasicFurnace.currentItemSmeltingTime)
+            {
+                icrafting.sendProgressBarUpdate(this, 2, this.tileDarkBasicFurnace.currentItemSmeltingTime);
+            }
+        }
+
+        this.lastCookTime = this.tileDarkBasicFurnace.smeltingTime;
+        this.lastBurnTime = this.tileDarkBasicFurnace.burnTime;
+        this.lastItemBurnTime = this.tileDarkBasicFurnace.currentItemSmeltingTime;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void updateProgressBar(int par1, int par2)
+    {
+        if (par1 == 0)
+        {
+            this.tileDarkBasicFurnace.smeltingTime = par2;
+        }
+
+        if (par1 == 1)
+        {
+            this.tileDarkBasicFurnace.burnTime = par2;
+        }
+
+        if (par1 == 2)
+        {
+            this.tileDarkBasicFurnace.currentItemSmeltingTime = par2;
+        }
     }
 
 

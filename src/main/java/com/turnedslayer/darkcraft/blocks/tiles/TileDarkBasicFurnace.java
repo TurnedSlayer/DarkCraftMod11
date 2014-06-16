@@ -2,19 +2,14 @@ package com.turnedslayer.darkcraft.blocks.tiles;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
-import cofh.api.energy.IEnergyStorage;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.BlockFurnace;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
-import net.minecraft.item.*;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.nbt.NBTTagList;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.Packet;
 import net.minecraft.network.play.server.S35PacketUpdateTileEntity;
@@ -27,7 +22,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEnergyHandler
 {
 
-    protected EnergyStorage storage = new EnergyStorage(10000);
+    public EnergyStorage storage = new EnergyStorage(100);
     private String localizedName;
     private static final int[] furnaceItemStacks_top = new int[]{0};
     private static final int[] furnaceItemStacks_sides = new int[]{1};
@@ -38,6 +33,8 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     public int smeltingTime;
     private ItemStack[] furnaceItemStacks = new ItemStack[2];
     private String field_145958_o;
+    protected int energy;
+    protected int capacity;
 
 
     public TileDarkBasicFurnace()
@@ -226,7 +223,68 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
             this.markDirty();
         }
     }
+/*
+public void updateEntity()
+{
+    boolean flag = this.furnaceBurnTime > 0;
+    boolean flag1 = false;
 
+    if (this.furnaceBurnTime > 0)
+    {
+        --this.furnaceBurnTime;
+    }
+
+    if (!this.worldObj.isRemote)
+    {
+        if (this.furnaceBurnTime == 0 && this.canSmelt())
+        {
+            this.currentItemBurnTime = this.furnaceBurnTime = getItemBurnTime(this.furnaceItemStacks[1]);
+
+            if (this.furnaceBurnTime > 0)
+            {
+                flag1 = true;
+
+                if (this.furnaceItemStacks[1] != null)
+                {
+                    --this.furnaceItemStacks[1].stackSize;
+
+                    if (this.furnaceItemStacks[1].stackSize == 0)
+                    {
+                        this.furnaceItemStacks[1] = furnaceItemStacks[1].getItem().getContainerItem(furnaceItemStacks[1]);
+                    }
+                }
+            }
+        }
+
+        if (this.isBurning() && this.canSmelt())
+        {
+            ++this.furnaceCookTime;
+
+            if (this.furnaceCookTime == 200)
+            {
+                this.furnaceCookTime = 0;
+                this.smeltItem();
+                flag1 = true;
+            }
+        }
+        else
+        {
+            this.furnaceCookTime = 0;
+        }
+
+        if (flag != this.furnaceBurnTime > 0)
+        {
+            flag1 = true;
+            BlockFurnace.updateFurnaceBlockState(this.furnaceBurnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
+        }
+    }
+
+    if (flag1)
+    {
+        this.markDirty();
+    }
+}
+*/
 
     public int[] getAccessibleSlotsFromSide(int var1) {
         return var1==0 ? furnaceItemStacks_bottom : (var1==1 ? furnaceItemStacks_top : furnaceItemStacks_sides);
@@ -262,30 +320,8 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     }
 
 
-    @Override
-    public int receiveEnergy(ForgeDirection from, int maxReceive, boolean simulate) {
-        return storage.receiveEnergy(maxReceive, false);
-    }
 
-    @Override
-    public int extractEnergy(ForgeDirection from, int maxExtract, boolean simulate) {
-        return storage.extractEnergy(maxExtract, false);
-    }
 
-    @Override
-    public int getEnergyStored(ForgeDirection from) {
-        return storage.getEnergyStored();
-    }
-
-    @Override
-    public int getMaxEnergyStored(ForgeDirection from) {
-        return storage.getEnergyStored();
-    }
-
-    @Override
-    public boolean canConnectEnergy(ForgeDirection from) {
-        return true;
-    }
 
     @Override
     public void onDataPacket(NetworkManager net, S35PacketUpdateTileEntity packet) {
@@ -302,4 +338,38 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     }
 
 
+    @Override
+    public boolean canConnectEnergy(ForgeDirection from) {
+
+        return true;
+    }
+
+    @Override
+    public int receiveEnergy(ForgeDirection from, int maxReceive, boolean simulate) {
+
+        return storage.receiveEnergy(maxReceive, false);
+    }
+
+    @Override
+    public int extractEnergy(ForgeDirection from, int maxExtract, boolean simulate) {
+
+        return storage.extractEnergy(maxExtract, false);
+    }
+
+    @Override
+    public int getEnergyStored(ForgeDirection from) {
+
+        return storage.getEnergyStored();
+    }
+
+    @Override
+    public int getMaxEnergyStored(ForgeDirection from) {
+
+        return storage.getMaxEnergyStored();
+    }
+
+    public int modifyEnergyStored(int energy) {
+
+        return 0;
+    }
 }

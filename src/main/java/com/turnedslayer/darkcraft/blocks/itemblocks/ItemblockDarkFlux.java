@@ -1,11 +1,8 @@
 package com.turnedslayer.darkcraft.blocks.itemblocks;
 
-import cofh.util.StringHelper;
 import net.minecraft.block.Block;
-import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import com.turnedslayer.darkcraft.blocks.blockDarkFlux;
 
 public class ItemblockDarkFlux extends ItemBlock {
     public ItemblockDarkFlux(Block block)

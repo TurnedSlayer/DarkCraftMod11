@@ -13,9 +13,9 @@ public interface IEnderAttuned {
 
 	int getFrequency();
 
-	public boolean setFrequency(int frequency);
+	boolean setFrequency(int frequency);
 
-	public boolean clearFrequency();
+	boolean clearFrequency();
 
 	boolean canSendItems();
 

@@ -3,14 +3,15 @@ package com.turnedslayer.darkcraft.items;
 /**
  * Created by TurnedSlayer.
  */
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
+
 import com.turnedslayer.darkcraft.libs.References;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
-public class itemDarkCraft extends Item
+public class ItemDarkCraft extends Item
 {
     public String getUnwrappedUnlocalizedName(String unlocalizedName)
     {

@@ -5,15 +5,12 @@ package com.turnedslayer.darkcraft.blocks;
  */
 
 import com.turnedslayer.darkcraft.DarkCraft;
-import com.turnedslayer.darkcraft.help.BlockHelper;
 import com.turnedslayer.darkcraft.libs.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockGlass;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
@@ -58,8 +55,7 @@ public class blockDarkGlass extends Block {
 
     @Override
     public void registerBlockIcons(IIconRegister iconRegistry) {
-        for (int i = 0; i < 47; i++)
-        {
+        for (int i = 0; i < 47; i++) {
             textures[i] = iconRegistry.registerIcon("turnedslayer_darkcraft:DarkGlass" + "_" + (i + 1));
         }
     }
@@ -140,8 +136,7 @@ public class blockDarkGlass extends Block {
     }
 
     @Override
-    public boolean canPlaceTorchOnTop (World world, int x, int y, int z)
-    {
+    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
         return true;
     }
 
@@ -153,13 +148,13 @@ public class blockDarkGlass extends Block {
     }
 
     @SideOnly(Side.CLIENT)
-    public Item getItem(World p_149694_1_, int p_149694_2_, int p_149694_3_, int p_149694_4_)
-    {
+    public Item getItem(World p_149694_1_, int p_149694_2_, int p_149694_3_, int p_149694_4_) {
         return Item.getItemFromBlock(DarkCraft.blockDarkGlass);
     }
 
     @Override
     public boolean isOpaqueCube() {
-        return true;
+        return false;
     }
+
 }

@@ -2,7 +2,6 @@ package com.turnedslayer.darkcraft.blocks;
 
 import com.turnedslayer.darkcraft.DarkCraft;
 import com.turnedslayer.darkcraft.help.Textures;
-import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;

@@ -3,9 +3,10 @@ package com.turnedslayer.darkcraft;
 /**
  * Created by TurnedSlayer.
  */
-import java.io.File;
 
 import net.minecraftforge.common.config.Configuration;
+
+import java.io.File;
 
 public class ConfigHelper
 {

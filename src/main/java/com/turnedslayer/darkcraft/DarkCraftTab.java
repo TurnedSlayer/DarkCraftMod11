@@ -3,9 +3,10 @@ package com.turnedslayer.darkcraft;
 /**
  * Created by TurnedSlayer.
  */
+
+import com.turnedslayer.darkcraft.help.BlockHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import com.turnedslayer.darkcraft.help.BlockHelper;
 
 public class DarkCraftTab extends CreativeTabs
 {
