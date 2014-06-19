@@ -9,7 +9,8 @@ import com.turnedslayer.darkcraft.help.ItemHelper;
  */
 public class ItemDarkGem extends ItemDarkCraft {
 
- public ItemDarkGem() {
+ public ItemDarkGem()
+ {
      super();
      this.setUnlocalizedName("itemDarkDiamond");
      this.setCreativeTab(DarkCraft.DarkCraftTab);
