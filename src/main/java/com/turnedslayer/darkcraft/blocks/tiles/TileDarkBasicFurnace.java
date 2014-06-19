@@ -2,8 +2,8 @@ package com.turnedslayer.darkcraft.blocks.tiles;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
+import cofh.api.energy.IEnergyStorage;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
-import net.minecraft.block.BlockFurnace;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
@@ -21,20 +21,22 @@ import net.minecraftforge.common.util.ForgeDirection;
  */
 public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEnergyHandler
 {
-
-    public EnergyStorage storage = new EnergyStorage(100);
+    private TileDarkBasicFurnace tilef;
+    public EnergyStorage storage = new EnergyStorage(10000);
     private String localizedName;
     private static final int[] furnaceItemStacks_top = new int[]{0};
     private static final int[] furnaceItemStacks_sides = new int[]{1};
     private static final int[] furnaceItemStacks_bottom = new int[]{2,1};
-    public int furnaceSpeed = 200;
+    public int furnaceSpeed = 10;
+    public int rfPerUse = 1000;
     public int burnTime;
     public int currentItemSmeltingTime;
     public int smeltingTime;
     private ItemStack[] furnaceItemStacks = new ItemStack[2];
     private String field_145958_o;
-    protected int energy;
     protected int capacity;
+    public int energy;
+
 
 
     public TileDarkBasicFurnace()
@@ -84,8 +86,9 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
         }
     }
 
-    public int getInventoryStackLimit() {
-    return 64;
+    public int getInventoryStackLimit()
+    {
+        return 64;
     }
 
     public boolean isUseableByPlayer(EntityPlayer entityplayer) {
@@ -118,6 +121,16 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
         return this.hasCustomInventoryName() ? this.field_145958_o : "ContainerBasicFurnace";
     }
 
+    public int getRFStored()
+    {
+        return this.storage.getEnergyStored() * 10 / 200;
+    }
+
+    public void onBlockDestroyed()
+    {
+        
+    }
+
     @Override
     public ItemStack getStackInSlot(int par1)
     {
@@ -133,25 +146,35 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
         return this.burnTime>0;
     }
 
-        private boolean canGrind(){
-            if(this.furnaceItemStacks[0] == null){
+
+
+        private boolean canSmelt(){
+
+            if (this.storage.getEnergyStored() <= 500) return false;
+
+            if (this.furnaceItemStacks[0] == null)
+            {
                 return false;
-            }else{
+            }
+            else
+            {
                 ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+                if (itemstack == null) return false;
+                if (this.furnaceItemStacks[1] == null) return true;
+                if (!this.furnaceItemStacks[1].isItemEqual(itemstack)) return false;
+                int result = furnaceItemStacks[1].stackSize + itemstack.stackSize;
 
-                if(itemstack == null) return false;
-                if(this.furnaceItemStacks[1] == null) return true;
-                if(!this.furnaceItemStacks[1].isItemEqual(itemstack)) return false;
-
-                int result = this.furnaceItemStacks[1].stackSize+itemstack.stackSize;
-
-                return (result<=getInventoryStackLimit()&&result<=itemstack.getMaxStackSize());
+                return result <= getInventoryStackLimit() && result <= this.furnaceItemStacks[1].getMaxStackSize(); //Forge BugFix: Make it respect stack sizes properly.
             }
         }
 
-            private void grindItem(){
-                if(this.canGrind()){
+
+
+
+            private void smeltItem(){
+                if(this.canSmelt()){
                     ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+                    this.storage.modifyEnergyStored(-500);
                     if(this.furnaceItemStacks[1]==null){
                         this.furnaceItemStacks[1]=itemstack.copy();
                     }else if(this.furnaceItemStacks[1].isItemEqual(itemstack)){
@@ -167,62 +190,39 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
 
 
 
-    public void updateEntity(){
-        boolean flag = this.burnTime > 0;
+    public void updateEntity()
+    {
+        boolean flag = this.smeltingTime > 0;
         boolean flag1 = false;
 
-        if(this.burnTime==0 ){
 
-            --this.burnTime;
-        }
 
         if (!this.worldObj.isRemote)
         {
 
 
-
-            if (this.burnTime == 0 && this.canGrind())
-            {
-                this.currentItemSmeltingTime = this.burnTime = storage.getEnergyStored();
-
-                if (this.burnTime > 0)
+                if (this.canSmelt())
                 {
-                    flag1 = true;
+                    ++this.smeltingTime;
 
+                    if (this.smeltingTime == furnaceSpeed)
+                    {
+                        this.smeltingTime = 0;
+                        this.smeltItem();
+                        flag1 = true;
 
+                    }
                 }
-            }
-
-            if (this.isSmelting() && this.canGrind())
-            {
-
-
-                ++this.smeltingTime;
-
-                if (this.smeltingTime == 200)
+                else
                 {
                     this.smeltingTime = 0;
-                    this.grindItem();
-                    flag1 = true;
                 }
-            }
-            else
-            {
-                this.smeltingTime = 0;
-            }
 
-            if (flag != this.smeltingTime > 0)
-            {
-                flag1 = true;
-                blockDarkBasicFurnace.updateBlockState(this.burnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
-            }
-        }
 
-        if (flag1)
-        {
-            this.markDirty();
         }
     }
+
+
 /*
 public void updateEntity()
 {
@@ -286,28 +286,56 @@ public void updateEntity()
 }
 */
 
-    public int[] getAccessibleSlotsFromSide(int var1) {
-        return var1==0 ? furnaceItemStacks_bottom : (var1==1 ? furnaceItemStacks_top : furnaceItemStacks_sides);
-    }
+    /*
+    public void updateEntity(){
+        boolean flag = this.burnTime > 0;
+        boolean flag1 = false;
 
-    public boolean canInsertItem(int i, ItemStack itemstack, int j) {
-        return this.isItemValidForSlot(i, itemstack);
-    }
 
-    public boolean canExtractItem(int i, ItemStack itemstack, int j) {
-        return j!=0 || i!=1 || itemstack.getItem()==Items.bucket;
-    }
+        if (!this.worldObj.isRemote)
+        {
 
-    public int getBurnTimeRemainingScaled(int i) {
-        if(this.currentItemSmeltingTime==0){
-            this.currentItemSmeltingTime=this.furnaceSpeed;
+
+
+            if (this.canGrind())
+            {
+                this.currentItemSmeltingTime = storage.getEnergyStored();
+
+            }
+
+            if (this.isSmelting() && this.canGrind())
+            {
+
+
+                ++this.smeltingTime;
+
+                if (this.smeltingTime == 200)
+                {
+                    this.smeltingTime = 0;
+                    this.grindItem();
+                    flag1 = true;
+                }
+            }
+            else
+            {
+                this.smeltingTime = 0;
+            }
+
+            if (flag != this.smeltingTime > 0)
+            {
+                flag1 = true;
+                blockDarkBasicFurnace.updateBlockState(this.burnTime > 0, this.worldObj, this.xCoord, this.yCoord, this.zCoord);
+            }
         }
-        return this.burnTime*i/this.currentItemSmeltingTime;
-    }
 
-    public int getCookProgressScaled(int i) {
-        return this.smeltingTime*i/this.furnaceSpeed;
+        if (flag1)
+        {
+            this.markDirty();
+        }
     }
+    */
+
+
 
     public void readFromNBT(NBTTagCompound nbt){
         super.readFromNBT(nbt);

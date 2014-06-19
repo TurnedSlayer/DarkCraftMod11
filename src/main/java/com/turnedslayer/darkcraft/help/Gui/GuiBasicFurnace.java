@@ -52,8 +52,8 @@ public class GuiBasicFurnace extends GuiContainer
         i1 = this.DarkFurnace.getCookProgressScaled(24);
         this.drawTexturedModalRect(k + 79, l + 34, 176, 14, i1 + 1, 16);
 */
-        rf = this.DarkFurnace.storage.getEnergyStored();
-        this.drawTexturedModalRect(k + 7, l + 2, 20, 20, rf + 1, 8);
+        rf = this.DarkFurnace.getRFStored();
+        this.drawTexturedModalRect(k + 7, l + 4, 176, 31, rf, 8);
 
     }
 
