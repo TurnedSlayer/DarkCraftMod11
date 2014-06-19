@@ -4,6 +4,7 @@ import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
 import cofh.api.energy.IEnergyStorage;
 import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
@@ -19,8 +20,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 /**
  * Created by TurnedSlayer.
  */
-public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEnergyHandler
-{
+public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEnergyHandler {
     private TileDarkBasicFurnace tilef;
     public EnergyStorage storage = new EnergyStorage(10000);
     private String localizedName;
@@ -126,10 +126,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
         return this.storage.getEnergyStored() * 10 / 200;
     }
 
-    public void onBlockDestroyed()
-    {
-        
-    }
+
 
     @Override
     public ItemStack getStackInSlot(int par1)
