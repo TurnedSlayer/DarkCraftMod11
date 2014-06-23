@@ -9,10 +9,10 @@ import com.turnedslayer.darkcraft.help.BlockHelper;
 import com.turnedslayer.darkcraft.libs.Strings;
 import net.minecraft.block.material.Material;
 
-public class blockDark extends blockDarkCraft
+public class BlockDark extends BlockDarkCraft
 {
 
-    public blockDark()
+    public BlockDark()
     {
         super(Material.rock);
         this.setBlockName(Strings.blockDark);

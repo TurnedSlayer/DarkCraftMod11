@@ -17,10 +17,13 @@ public class ContainerBasicFurnace extends Container
 {
 
     private TileDarkBasicFurnace tileDarkBasicFurnace;
+    private GuiBasicFurnace tile ;
     private int lastCookTime;
     private int lastBurnTime;
     private int lastItemBurnTime;
     private static final String __OBFID = "CL_00001748";
+    private int getEnergyStored;
+    private int getMaxEnergyStored;
 
     public ContainerBasicFurnace(InventoryPlayer par1InventoryPlayer, TileDarkBasicFurnace par2TileDarkBasicFurnace)
     {
@@ -126,9 +129,7 @@ public class ContainerBasicFurnace extends Container
     public void addCraftingToCrafters(ICrafting par1ICrafting)
     {
         super.addCraftingToCrafters(par1ICrafting);
-        par1ICrafting.sendProgressBarUpdate(this, 0, this.tileDarkBasicFurnace.smeltingTime);
-        par1ICrafting.sendProgressBarUpdate(this, 1, this.tileDarkBasicFurnace.burnTime);
-        par1ICrafting.sendProgressBarUpdate(this, 2, this.tileDarkBasicFurnace.currentItemSmeltingTime);
+        par1ICrafting.sendProgressBarUpdate(this, 0, this.tile.rf);
     }
 
     /**
@@ -137,30 +138,16 @@ public class ContainerBasicFurnace extends Container
     public void detectAndSendChanges()
     {
         super.detectAndSendChanges();
-
-        for (int i = 0; i < this.crafters.size(); ++i)
+        ICrafting icrafting = (ICrafting)this.crafters.get(0);
+        if (this.getEnergyStored != this.getMaxEnergyStored )
         {
-            ICrafting icrafting = (ICrafting)this.crafters.get(i);
 
-            if (this.lastCookTime != this.tileDarkBasicFurnace.smeltingTime)
-            {
-                icrafting.sendProgressBarUpdate(this, 0, this.tileDarkBasicFurnace.smeltingTime);
-            }
-
-            if (this.lastBurnTime != this.tileDarkBasicFurnace.burnTime)
-            {
-                icrafting.sendProgressBarUpdate(this, 1, this.tileDarkBasicFurnace.burnTime);
-            }
-
-            if (this.lastItemBurnTime != this.tileDarkBasicFurnace.currentItemSmeltingTime)
-            {
-                icrafting.sendProgressBarUpdate(this, 2, this.tileDarkBasicFurnace.currentItemSmeltingTime);
-            }
+            icrafting.sendProgressBarUpdate(this, 0,this.tile.rf );
         }
 
-        this.lastCookTime = this.tileDarkBasicFurnace.smeltingTime;
-        this.lastBurnTime = this.tileDarkBasicFurnace.burnTime;
-        this.lastItemBurnTime = this.tileDarkBasicFurnace.currentItemSmeltingTime;
+        this.getEnergyStored = this.tileDarkBasicFurnace.storage.getEnergyStored();
+        this.getMaxEnergyStored = this.tileDarkBasicFurnace.storage.getMaxEnergyStored();
+
     }
 
     @SideOnly(Side.CLIENT)

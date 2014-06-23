@@ -1,0 +1,48 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 22/06/14 19:25
+Description: Exception in server tick loop
+
+java.lang.IllegalArgumentException: n must be positive
+	at java.util.Random.nextInt(Random.java:300)
+	at com.turnedslayer.darkcraft.help.worldGen.EventManager.addOreSpawn(EventManager.java:55)
+	at com.turnedslayer.darkcraft.help.worldGen.EventManager.generateSurface(EventManager.java:38)
+	at com.turnedslayer.darkcraft.help.worldGen.EventManager.generate(EventManager.java:24)
+	at cpw.mods.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:102)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:256)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1162)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:150)
+	at net.minecraft.server.MinecraftServer.initialWorldChunkLoad(MinecraftServer.java:307)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:79)
+	at net.minecraft.server.integrated.IntegratedServer.startServer(IntegratedServer.java:96)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:442)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:742)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.2
+	Operating System: Windows 8 (amd64) version 6.2
+	Java Version: 1.7.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 720689392 bytes (687 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.01-pre FML v7.2.156.1060 Minecraft Forge 10.12.1.1060 7 mods loaded, 7 mods active
+	mcp{8.09} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	FML{7.2.156.1060} [Forge Mod Loader] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	Forge{10.12.1.1060} [Minecraft Forge] (forgeSrc-1.7.2-10.12.1.1060.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	CodeChickenCore{1.0.0} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	NotEnoughItems{1.0.1} [Not Enough Items] (NotEnoughItems-1.7.2-1.0.1-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	turnedslayer_darkcraft{0.0.1} [DarkCraft Mod] (DarkCraftMod) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	EnderIO{1.1.0_alpha} [Ender IO] (enderio-1.1.0_alpha.78 (1).jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'

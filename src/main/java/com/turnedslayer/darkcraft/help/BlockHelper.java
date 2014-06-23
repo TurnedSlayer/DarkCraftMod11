@@ -1,9 +1,9 @@
 package com.turnedslayer.darkcraft.help;
 
-import com.turnedslayer.darkcraft.blocks.blockDark;
-import com.turnedslayer.darkcraft.blocks.blockDarkCraft;
-import com.turnedslayer.darkcraft.blocks.blockDarkDiamond;
-import com.turnedslayer.darkcraft.blocks.blockDarkDiamondBricks;
+import com.turnedslayer.darkcraft.blocks.BlockDarkDiamond;
+import com.turnedslayer.darkcraft.blocks.BlockDark;
+import com.turnedslayer.darkcraft.blocks.BlockDarkCraft;
+import com.turnedslayer.darkcraft.blocks.BlockDarkDiamondBricks;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -21,9 +21,9 @@ public class BlockHelper
 
 public static void init()
 {
-    blockDarkDiamond = new blockDarkDiamond().setBlockName("blockDarkDiamond");
-    blockDark = new blockDark().setBlockName("blockDark");
-    blockDarkDiamondBricks = new blockDarkDiamondBricks().setBlockName("blockDarkDiamondBricks");
+    blockDarkDiamond = new BlockDarkDiamond().setBlockName("blockDarkDiamond");
+    blockDark = new BlockDark().setBlockName("blockDark");
+    blockDarkDiamondBricks = new BlockDarkDiamondBricks().setBlockName("blockDarkDiamondBricks");
 
 
 }
@@ -35,13 +35,13 @@ public static void init()
  * Format: [block], [unlocalizedname]
  * @param block
  */
-    public static void register(blockDarkCraft block)
+    public static void register(BlockDarkCraft block)
     {
         GameRegistry.registerBlock(block, block.getUnwrappedUnlocalizedName(block.getUnlocalizedName()));
 
     }
 
-    public static void registerBlocksWithMetadata(blockDarkCraft block, Class<? extends ItemBlock> itemBlockClass, String name)
+    public static void registerBlocksWithMetadata(BlockDarkCraft block, Class<? extends ItemBlock> itemBlockClass, String name)
     {
         GameRegistry.registerBlock(block, itemBlockClass, name);
     }

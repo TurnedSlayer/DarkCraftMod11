@@ -2,11 +2,7 @@ package com.turnedslayer.darkcraft.blocks.tiles;
 
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyHandler;
-import cofh.api.energy.IEnergyStorage;
-import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
-import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.FurnaceRecipes;
@@ -36,6 +32,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     private String field_145958_o;
     protected int capacity;
     public int energy;
+    public int maxRF = 10000;
 
 
 
@@ -125,6 +122,7 @@ public class TileDarkBasicFurnace extends TileEntity implements IInventory, IEne
     {
         return this.storage.getEnergyStored() * 10 / 200;
     }
+
 
 
 

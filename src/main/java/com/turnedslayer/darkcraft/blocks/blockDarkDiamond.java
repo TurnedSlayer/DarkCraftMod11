@@ -11,9 +11,9 @@ import net.minecraft.block.material.Material;
 
 
 
-public class blockDarkDiamond extends blockDarkCraft
+public class BlockDarkDiamond extends BlockDarkCraft
 {
-    public blockDarkDiamond()
+    public BlockDarkDiamond()
     {
         super(Material.rock);
         this.setBlockName(Strings.blockDarkDiamond);

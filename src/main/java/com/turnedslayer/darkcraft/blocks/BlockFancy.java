@@ -16,9 +16,9 @@ import java.util.List;
 
 
 
-public class blockFancy extends Block
+public class BlockFancy extends Block
 {
-    public blockFancy()
+    public BlockFancy()
     {
         super(Material.rock);
         this.setCreativeTab(DarkCraft.DarkCraftTab);

@@ -9,9 +9,9 @@ import com.turnedslayer.darkcraft.libs.Strings;
 import net.minecraft.block.material.Material;
 
 
-public class blockDarkDiamondBricks extends blockDarkCraft
+public class BlockDarkDiamondBricks extends BlockDarkCraft
 {
-    public blockDarkDiamondBricks()
+    public BlockDarkDiamondBricks()
     {
         super(Material.rock);
         this.setBlockName(Strings.blockDarkDiamondBricks);

@@ -1,11 +1,13 @@
 package com.turnedslayer.darkcraft;
 
-import com.turnedslayer.darkcraft.blocks.blockDarkBasicFurnace;
-import com.turnedslayer.darkcraft.blocks.blockDarkGlass;
+import com.turnedslayer.darkcraft.blocks.BlockDarkBasicFurnace;
+import com.turnedslayer.darkcraft.blocks.BlockDarkGlass;
+import com.turnedslayer.darkcraft.blocks.BlockDarkOre;
 import com.turnedslayer.darkcraft.blocks.tiles.TileDarkBasicFurnace;
 import com.turnedslayer.darkcraft.help.BlockHelper;
 import com.turnedslayer.darkcraft.help.Gui.GuiHandler;
 import com.turnedslayer.darkcraft.help.ItemHelper;
+import com.turnedslayer.darkcraft.help.worldGen.EventManager;
 import com.turnedslayer.darkcraft.libs.References;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.ModMetadata;
@@ -39,12 +41,18 @@ public class DarkCraft{
     public static Block blockDarkBasicFurnace;
     // public static Block blockFancy;
     public static Block blockDarkBasicFurnaceActive;
+    public static Block BlockDarkOre;
 
     //Items
     public static Item BluesteelHelmet;
     public static Item BluesteelChest;
     public static Item BluesteelLeggings;
     public static Item BluesteelBoots;
+    public static Item BluesteelPickaxe;
+    public static Item BluesteelAxe;
+    public static Item BluesteelSword;
+    public static Item BluesteelShovel;
+    public static Item BluesteelHoe;
 
     static ItemArmor.ArmorMaterial BluesteelArmorMaterial = EnumHelper.addArmorMaterial("BluesteelArmorMaterial", 50, new int[]{6, 16, 12, 6}, 30);
 
@@ -59,18 +67,19 @@ public class DarkCraft{
     public void preInit(FMLPreInitializationEvent event)
     {
         //Blocks
-        blockDarkGlass = new blockDarkGlass().setBlockName("blockDarkGlass");
+        blockDarkGlass = new BlockDarkGlass().setBlockName("blockDarkGlass");
         GameRegistry.registerBlock(blockDarkGlass, "blockDarkGlass");
-        blockDarkBasicFurnace = new blockDarkBasicFurnace().setBlockName("blockDarkBasicFurnace");
+        blockDarkBasicFurnace = new BlockDarkBasicFurnace().setBlockName("blockDarkBasicFurnace");
+        BlockDarkOre = new BlockDarkOre().setBlockName("blockDarkOre");
 
         //Armor
-        BluesteelHelmet = new com.turnedslayer.darkcraft.armour.BluesteelHelmet(BluesteelArmorMaterial, 0);
+        BluesteelHelmet = new com.turnedslayer.darkcraft.items.armour.BluesteelHelmet(BluesteelArmorMaterial, 0);
         GameRegistry.registerItem(BluesteelHelmet, "Bluesteel Helmet");
-        BluesteelChest = new com.turnedslayer.darkcraft.armour.BluesteelChest(BluesteelArmorMaterial, 1);
+        BluesteelChest = new com.turnedslayer.darkcraft.items.armour.BluesteelChest(BluesteelArmorMaterial, 1);
         GameRegistry.registerItem(BluesteelChest, "Bluesteel Chest");
-        BluesteelLeggings = new com.turnedslayer.darkcraft.armour.BluesteelLeggings(BluesteelArmorMaterial, 2);
+        BluesteelLeggings = new com.turnedslayer.darkcraft.items.armour.BluesteelLeggings(BluesteelArmorMaterial, 2);
         GameRegistry.registerItem(BluesteelLeggings, "Bluesteel Leg");
-        BluesteelBoots = new com.turnedslayer.darkcraft.armour.BluesteelBoots(BluesteelArmorMaterial, 3);
+        BluesteelBoots = new com.turnedslayer.darkcraft.items.armour.BluesteelBoots(BluesteelArmorMaterial, 3);
         GameRegistry.registerItem(BluesteelBoots, "Bluesteel Boots");
 
 
@@ -78,6 +87,10 @@ public class DarkCraft{
         BlockHelper.init();
 
         ItemHelper.init();
+
+        GameRegistry.registerWorldGenerator(new EventManager(), 0);
+
+
 
     }
 

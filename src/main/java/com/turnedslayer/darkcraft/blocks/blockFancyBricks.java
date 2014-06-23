@@ -17,9 +17,9 @@ import java.util.List;
 /**
  * Created by TurnedSlayer.
  */
-public class blockFancyBricks extends Block
+public class BlockFancyBricks extends Block
 {
-    public blockFancyBricks()
+    public BlockFancyBricks()
     {
         super(Material.rock);
         this.setCreativeTab(DarkCraft.DarkCraftTab);

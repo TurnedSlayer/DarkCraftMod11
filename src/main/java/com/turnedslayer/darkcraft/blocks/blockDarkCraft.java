@@ -8,13 +8,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
 
-public class blockDarkCraft extends Block
+public class BlockDarkCraft extends Block
 {
     /**
      * Constructor for when no material is passed on.
      * Default material: rock
      */
-    public blockDarkCraft()
+    public BlockDarkCraft()
     {
         super(Material.rock);
     }
@@ -23,7 +23,7 @@ public class blockDarkCraft extends Block
      * Constructor for defined material.
      * @param material
      */
-    public blockDarkCraft(Material material)
+    public BlockDarkCraft(Material material)
     {
         super(material);
     }
