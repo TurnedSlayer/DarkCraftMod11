@@ -1,16 +1,13 @@
 package com.turnedslayer.darkcraft.help.worldGen;
 
-import java.util.Random;
-
-import com.turnedslayer.darkcraft.DarkCraft;
-import com.turnedslayer.darkcraft.blocks.BlockDarkCraft;
 import com.turnedslayer.darkcraft.help.BlockHelper;
+import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
-import cpw.mods.fml.common.IWorldGenerator;
+
+import java.util.Random;
 
 public class EventManager implements IWorldGenerator
 {
@@ -35,7 +32,7 @@ public class EventManager implements IWorldGenerator
     private void generateSurface(World world, Random random, int x, int z)
     {
 
-        this.addOreSpawn(DarkCraft.BlockDarkOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 1, 30);
+        this.addOreSpawn(BlockHelper.blockWorldDarkOre, world, random, x, z, 16, 16, 4 + random.nextInt(3), 5, 1, 30);
 
     }
 

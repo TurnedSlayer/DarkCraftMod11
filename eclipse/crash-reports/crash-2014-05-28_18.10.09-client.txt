@@ -5,7 +5,7 @@ Time: 28/05/14 18:10
 Description: Rendering screen
 
 java.lang.NullPointerException: Rendering screen
-	at com.turnedslayer.darkcraft.help.Gui.GuiBasicFurnace.drawGuiContainerBackgroundLayer(GuiBasicFurnace.java:31)
+	at com.turnedslayer.darkcraft.help.Gui.basicFurnace.GuiBasicFurnace.drawGuiContainerBackgroundLayer(GuiBasicFurnace.java:31)
 	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:97)
 	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1143)
 	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022)
@@ -29,12 +29,12 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at com.turnedslayer.darkcraft.help.Gui.GuiBasicFurnace.drawGuiContainerBackgroundLayer(GuiBasicFurnace.java:31)
+	at com.turnedslayer.darkcraft.help.Gui.basicFurnace.GuiBasicFurnace.drawGuiContainerBackgroundLayer(GuiBasicFurnace.java:31)
 	at net.minecraft.client.gui.inventory.GuiContainer.drawScreen(GuiContainer.java:97)
 
 -- Screen render details --
 Details:
-	Screen name: com.turnedslayer.darkcraft.help.Gui.GuiBasicFurnace
+	Screen name: com.turnedslayer.darkcraft.help.Gui.basicFurnace.GuiBasicFurnace
 	Mouse location: Scaled: (213, 119). Absolute: (427, 240)
 	Screen size: Scaled: (427, 240). Absolute: (854, 480). Scale factor of 2
 

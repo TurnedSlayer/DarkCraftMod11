@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DarkCraftMod.iml" filepath="$PROJECT_DIR$/DarkCraftMod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DarkCraft1.7.10.iml" filepath="$PROJECT_DIR$/DarkCraft1.7.10.iml" />
     </modules>
   </component>
 </project>

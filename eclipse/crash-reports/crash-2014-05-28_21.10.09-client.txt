@@ -8,7 +8,7 @@ java.lang.IndexOutOfBoundsException: Index: 38, Size: 38
 	at java.util.ArrayList.rangeCheck(ArrayList.java:635)
 	at java.util.ArrayList.get(ArrayList.java:411)
 	at net.minecraft.inventory.Container.mergeItemStack(Container.java:622)
-	at com.turnedslayer.darkcraft.help.Gui.ContainerBasicFurnace.transferStackInSlot(ContainerBasicFurnace.java:92)
+	at com.turnedslayer.darkcraft.help.Gui.basicFurnace.ContainerBasicFurnace.transferStackInSlot(ContainerBasicFurnace.java:92)
 	at net.minecraft.inventory.Container.slotClick(Container.java:281)
 	at net.minecraft.client.multiplayer.PlayerControllerMP.windowClick(PlayerControllerMP.java:482)
 	at net.minecraft.client.gui.inventory.GuiContainer.handleMouseClick(GuiContainer.java:677)
@@ -40,7 +40,7 @@ Stacktrace:
 	at java.util.ArrayList.rangeCheck(ArrayList.java:635)
 	at java.util.ArrayList.get(ArrayList.java:411)
 	at net.minecraft.inventory.Container.mergeItemStack(Container.java:622)
-	at com.turnedslayer.darkcraft.help.Gui.ContainerBasicFurnace.transferStackInSlot(ContainerBasicFurnace.java:92)
+	at com.turnedslayer.darkcraft.help.Gui.basicFurnace.ContainerBasicFurnace.transferStackInSlot(ContainerBasicFurnace.java:92)
 	at net.minecraft.inventory.Container.slotClick(Container.java:281)
 	at net.minecraft.client.multiplayer.PlayerControllerMP.windowClick(PlayerControllerMP.java:482)
 	at net.minecraft.client.gui.inventory.GuiContainer.handleMouseClick(GuiContainer.java:677)
@@ -50,7 +50,7 @@ Stacktrace:
 
 -- Affected screen --
 Details:
-	Screen name: com.turnedslayer.darkcraft.help.Gui.GuiBasicFurnace
+	Screen name: com.turnedslayer.darkcraft.help.Gui.basicFurnace.GuiBasicFurnace
 
 -- Affected level --
 Details:

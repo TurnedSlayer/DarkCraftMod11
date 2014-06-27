@@ -1,9 +1,6 @@
 package com.turnedslayer.darkcraft.help;
 
-import com.turnedslayer.darkcraft.blocks.BlockDarkDiamond;
-import com.turnedslayer.darkcraft.blocks.BlockDark;
-import com.turnedslayer.darkcraft.blocks.BlockDarkCraft;
-import com.turnedslayer.darkcraft.blocks.BlockDarkDiamondBricks;
+import com.turnedslayer.darkcraft.blocks.*;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -17,6 +14,7 @@ public class BlockHelper
    // public static Block blockDarkBasicFurnace;
     public static Block blockDarkFlux;
     public static Block blockDarkFluxCrystal;
+    public static Block blockWorldDarkOre;
 
 
 public static void init()
@@ -24,6 +22,7 @@ public static void init()
     blockDarkDiamond = new BlockDarkDiamond().setBlockName("blockDarkDiamond");
     blockDark = new BlockDark().setBlockName("blockDark");
     blockDarkDiamondBricks = new BlockDarkDiamondBricks().setBlockName("blockDarkDiamondBricks");
+    blockWorldDarkOre = new BlockWorldDarkOre().setBlockName("blockWorldDarkOre");
 
 
 }

@@ -4,7 +4,77 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/armour/BluesteelHelmet.java" line="33" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e402bea-a28e-47d4-acee-082795e2f06a" name="Default" comment="" />
+    <list default="true" id="8e402bea-a28e-47d4-acee-082795e2f06a" name="Default" comment="Updated Forge to 1.7.10">
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__authlib_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__commons_lang3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__forgeSrc_1_7_2_10_12_1_1060.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__guava_15_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__lwjgl_2_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__lwjgl_platform_2_9_0_natives_linux.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__lwjgl_platform_2_9_0_natives_osx.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__lwjgl_platform_2_9_0_natives_windows.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\.idea\libraries\Gradle__lwjgl_util_2_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\eclipse\mods\1.7.2\CodeChickenLib-1.7.2-1.1.0.76-dev.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\eclipse\mods\CodeChickenCore-1.7.2-1.0.0-universal.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\eclipse\mods\NotEnoughItems-1.7.2-1.0.1-universal.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\eclipse\mods\cglib-nodep-2.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\eclipse\mods\enderio-1.1.0_alpha.78 (1).jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\src\main\java\com\turnedslayer\darkcraft\help\Gui\ContainerBasicFurnace.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Development\DarkCraft1.7.10\src\main\java\com\turnedslayer\darkcraft\help\Gui\GuiBasicFurnace.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkBasicFurnace.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkBasicFurnace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-1.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-1.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-2.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-2.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-3.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-3.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-4.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-4.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-5.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-5.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-6.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-6.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/logs/2014-06-23-7.log.gz" afterPath="$PROJECT_DIR$/eclipse/logs/2014-06-23-7.log.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/turnedslayer_darkcraft/textures/models/Shadow_Armour_Layer_1.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/turnedslayer_darkcraft/textures/models/Shadow_Armour_Layer_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/assets/turnedslayer_darkcraft/textures/models/Shadow_Armour_Layer_2.png" afterPath="$PROJECT_DIR$/src/main/resources/assets/turnedslayer_darkcraft/textures/models/Shadow_Armour_Layer_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/players/TurnedSlayer.dat" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/players/TurnedSlayer.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/level.dat" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/level.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/level.dat_old" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/level.dat_old" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/region/r.-1.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/region/r.-1.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/region/r.0.0.mca" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/region/r.0.0.mca" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/session.lock" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/session.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/DIM-1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/DIM-1/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/DIM1/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/DIM1/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/data/villages.dat" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/data/villages.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/EventManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/EventManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/ItemDarkGem.java" afterPath="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/ItemDarkGem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/stats/TurnedSlayer.json" afterPath="$PROJECT_DIR$/eclipse/saves/Copy of Copy of Copy of Copy of--/stats/TurnedSlayer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-20_16.33.33-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-20_16.33.33-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-20_16.37.17-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-20_16.37.17-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_11.35.32-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_11.35.32-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_13.14.25-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_13.14.25-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_13.18.54-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-24_13.18.54-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.00.37-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.00.37-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.10.09-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.10.09-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.11.12-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.11.12-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.26.35-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_18.26.35-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_20.57.30-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_20.57.30-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_20.59.09-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_20.59.09-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_21.10.09-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_21.10.09-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_22.14.01-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_22.14.01-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_22.15.32-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-05-28_22.15.32-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_22.36.50-client.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_22.36.50-client.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.01.26-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.01.26-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.05.04-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.05.04-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.09.04-server.txt" afterPath="$PROJECT_DIR$/eclipse/crash-reports/crash-2014-06-23_23.09.04-server.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/options.txt" afterPath="$PROJECT_DIR$/eclipse/options.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eclipse/assets/pack.mcmeta" afterPath="$PROJECT_DIR$/eclipse/assets/pack.mcmeta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Forge Modding 1.7.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,64 +100,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="BlockDarkOre.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.50073636" vertical-offset="0" max-vertical-offset="679">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DarkCraft.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/DarkCraft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2040">
-              <caret line="90" column="65" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockDarkOre.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="782">
-              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TileDarkBasicFurnace.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/tiles/TileDarkBasicFurnace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="6426">
-              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-              <folding>
-                <element signature="e#3558#3559#0" expanded="true" />
-                <element signature="e#3622#3623#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiBasicFurnace.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiBasicFurnace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="884">
-              <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContainerBasicFurnace.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/ContainerBasicFurnace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="1870" max-vertical-offset="2805">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContainerFurnace.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/inventory/ContainerFurnace.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="3026">
-              <caret line="71" column="95" selection-start-line="71" selection-start-column="95" selection-end-line="71" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2040">
+              <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -100,6 +127,10 @@
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
       <map>
@@ -111,15 +142,15 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="DarkCraftMod" />
+              <option name="name" value="DarkCraft1.7.10" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="DarkCraftMod" />
-                <option name="path" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="name" value="DarkCraft1.7.10" />
+                <option name="path" value="C:\Development\DarkCraft1.7.10" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -403,276 +434,276 @@
             </list>
           </value>
         </entry>
-        <entry key="G:\Users\quin1_000\Desktop\DarkCraftMod">
+        <entry key="C:\Development\DarkCraft1.7.10">
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="afterEclipseImport" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'api'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="apiClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="applyBinPatches" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="assemble" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="check" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'main'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Cleares the ForgeGradle cache. DONT RUN THIS unless you want a fresh start, or the dev tells you to." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="cleanCache" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Cleans all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="cleanEclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="cleanEclipseClasspath" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="cleanEclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="cleanEclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'api:java'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="compileApiJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'main:java'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles Java source 'test:java'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="copyAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the Minecraft client in debug mode" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="debugClient" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the Minecraft serevr in debug mode" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="debugServer" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="decompile" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="deobfBinJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="deobfuscateJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="downloadClient" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="downloadMcpTools" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="downloadServer" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates all Eclipse files." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="eclipse" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse classpath file." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="eclipseClasspath" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse JDT settings file." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="eclipseJdt" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates the Eclipse project file." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="eclipseProject" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="extractMinecraftSrc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="extractNatives" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="extractUserDev" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="genIntellijRuns" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="genSrgs" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="getAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="getAssetsIndex" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="install" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="javadoc" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="mergeJars" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes resources 'api:resources'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="processApiResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes resources 'main:resources'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="processSources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Processes resources 'test:resources'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="processTestResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="recompMinecraft" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="remapJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="reobf" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="repackMinecraft" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the Minecraft client" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="runClient" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the Minecraft Server" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="runServer" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Sets up the bare minimum to build a minecraft mod. Idea for CI servers" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="setupCIWorkspace" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="DevWorkspace + the deobfuscated Minecraft source linked as a source jar." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="setupDecompWorkspace" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="CIWorkspace + natives and assets to run and test Minecraft" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="setupDevWorkspace" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="sourceMainJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="test" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles classes 'test'." />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="testClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Uploads all artifacts belonging to configuration ':archives'" />
-                <option name="linkedExternalProjectPath" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                <option name="linkedExternalProjectPath" value="C:\Development\DarkCraft1.7.10" />
                 <option name="name" value="uploadArchives" />
               </ExternalTaskPojo>
             </list>
@@ -682,9 +713,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1399822216791" />
-        <entry key="$PROJECT_DIR$/../Forge Mod 1.7/Forge Modding 1.7" value="1399822216791" />
-        <entry key="$PROJECT_DIR$/../forge-1.6.4-9.11.1.964-src" value="1384998398000" />
+        <entry key="$PROJECT_DIR$" value="1403812273110" />
+        <entry key="C:/Users/quin1_000/Dropbox/DarkCraft" value="1399822216791" />
+        <entry key="$USER_HOME$/Desktop/DarkCraft" value="1403644467760" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -694,12 +725,12 @@
             <ExternalProjectBuildClasspathPojo>
               <option name="modulesBuildClasspath">
                 <map>
-                  <entry key="G:\Users\quin1_000\Desktop\DarkCraftMod">
+                  <entry key="C:\Development\DarkCraft1.7.10">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge.gradle/ForgeGradle/1.2-SNAPSHOT/97068b7f60824e1e6df37d47860fff2e135f2c42/ForgeGradle-1.2-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge.gradle/ForgeGradle/1.2-SNAPSHOT/f8d74b9f44a8fdd66ce8fa56c65b74a1a4729035/ForgeGradle-1.2-SNAPSHOT.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a6dc5db8a12928e583bd3f23e72d3ab611ecd58f/gson-2.2.4-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/9cd14a61d7aa7d554f251ef285a6f2c65caf7b65/jopt-simple-4.6-sources.jar" />
@@ -711,7 +742,7 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-debug-all/4.1/dd6ba5c392d4102458494e29f54f70ac534ec2a2/asm-debug-all-4.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.md-5/SpecialSource/1.7-SNAPSHOT/24c48c67beadc1617642ee9f839d6be660369fee/SpecialSource-1.7-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.md-5/SpecialSource/1.7-SNAPSHOT/e54181ea1a9fe7e1ce80bd9972763413a5c98173/SpecialSource-1.7-SNAPSHOT.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/c0f18880fb29c7bfc088a6e114c66fe30a5e8df2/lzma-java-1.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/a25db9d4d385ccda4825ae1b47a7a61d86e595af/lzma-java-1.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.argo/argo/3.4/2b39738e65594d8487924a946dee0eae35af87ce/argo-3.4-sources.jar" />
@@ -775,60 +806,18 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.3/884b613cfc42948ad5d4cf507286ffe19592ebed/httpmime-4.3.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.3/e02368d7b56c0c376f227378a4f77de62864d020/httpmime-4.3.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.oceanlabs.mcp/mcinjector/3.2-SNAPSHOT/2c7994e5ade4dbd841d65fc60f47f1b72c4eaed8/mcinjector-3.2-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.oceanlabs.mcp/mcinjector/3.2-SNAPSHOT/12692e2251b7392ea6eaa0d4a9c4cba601d4c056/mcinjector-3.2-SNAPSHOT.jar" />
                           </list>
                         </option>
-                        <option name="path" value="G:\Users\quin1_000\Desktop\DarkCraftMod" />
+                        <option name="path" value="C:\Development\DarkCraft1.7.10" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
                   </entry>
                 </map>
               </option>
-              <option name="name" value="DarkCraftMod" />
+              <option name="name" value="DarkCraft1.7.10" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/ant-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/ant-launcher-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-base-services-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-base-services-groovy-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-cli-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-core-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-docs-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-launcher-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-messaging-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-native-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-open-api-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-resources-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-tooling-api-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-ui-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/gradle-wrapper-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/groovy-all-1.8.6.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/ant-antlr-1.9.2.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-announce-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-antlr-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-build-comparison-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-build-init-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-code-quality-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-core-impl-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-cpp-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-diagnostics-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-ear-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-ide-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-ivy-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-jacoco-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-javascript-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-jetty-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-language-base-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-language-jvm-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-maven-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-osgi-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-plugins-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-publish-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-reporting-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-scala-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-signing-1.11.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-1.11-bin/4h5v8877arc3jhuqbm3osbr7o7/gradle-1.11/lib/plugins/gradle-sonar-1.11.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -842,9 +831,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/GuiHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/GuiBasicFurnace.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/TileDarkBasicFurnace.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/itemDarkCraft.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/itemDarkDiamond.java" />
@@ -865,7 +851,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/blockFancyBricks.java" />
         <option value="$PROJECT_DIR$/src/main/java/cofh/api/energy/TileEnergyHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/ItemDarkFlux.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Textures.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/armour/BluesteelArmor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/libs/References.java" />
@@ -888,11 +873,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockFancy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/eventmanager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/DarkCraft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/tiles/TileDarkBasicFurnace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiBasicFurnace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/ContainerBasicFurnace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkBasicFurnace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockWorldOre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/EventManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/tiles/TileDarkBasicFurnace.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/ContainerBasicFurnace.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiBasicFurnace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockWorldDarkOre.java" />
       </list>
     </option>
   </component>
@@ -928,254 +917,106 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eclipse" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eclipse" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mods" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DarkCraft1.7.10" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eclipse" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
+              <option name="myItemId" value="DarkCraft1.7.10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="net" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="minecraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
+              <option name="myItemId" value="DarkCraft1.7.10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
+              <option name="myItemId" value="DarkCraft1.7.10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
+              <option name="myItemId" value="DarkCraft1.7.10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="items" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="worldGen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="help" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DarkCraftMod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.turnedslayer.darkcraft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Forge Modding 1.7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Forge Modding 1.7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
       </pane>
     </panes>
   </component>
@@ -1187,22 +1028,15 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.lastSelected" value="preferences.general" />
+    <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="FullScreen" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="LayoutCode.rearrangeEntries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -1214,6 +1048,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -1346,15 +1189,15 @@
     <configuration default="false" name="Minecraft Client" type="Application" factoryName="Application">
       <extension enabled="false" name="coverage" runner="idea" sample_coverage="true" />
       <option name="MAIN_CLASS_NAME" value="net.minecraft.launchwrapper.Launch" />
-      <option name="VM_PARAMETERS" value="-Xincgc -Xmx1024M -Xms1024M -Djava.library.path=&quot;$PROJECT_DIR$/../DarkCraftMod\build\natives&quot; -Dfml.ignoreInvalidMinecraftCertificates=true" />
-      <option name="PROGRAM_PARAMETERS" value="--version 1.7 --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --username=TurnedSlayer --accessToken FML" />
+      <option name="VM_PARAMETERS" value="-Xincgc -Xmx1024M -Xms1024M -Djava.library.path=&quot;$PROJECT_DIR$/../DarkCraft1.7.10\build\natives&quot; -Dfml.ignoreInvalidMinecraftCertificates=true" />
+      <option name="PROGRAM_PARAMETERS" value="--version 1.7 --tweakClass cpw.mods.fml.common.launcher.FMLTweaker --username=TurnedSlayer --accessToken FML --userProperties={} --assetsDir=eclipse/assets" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/eclipse" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="DarkCraftMod" />
+      <module name="DarkCraft1.7.10" />
       <envs />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
@@ -1371,13 +1214,13 @@
       <option name="MAIN_CLASS_NAME" value="cpw.mods.fml.relauncher.ServerLaunchWrapper" />
       <option name="VM_PARAMETERS" value="-Xincgc -Dfml.ignoreInvalidMinecraftCertificates=true" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../DarkCraftMod\eclipse" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../DarkCraft1.7.10\eclipse" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="DarkCraftMod" />
+      <module name="DarkCraft1.7.10" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -1412,7 +1255,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956153" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38755304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32956153" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1425,8 +1268,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1751302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38330975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1998698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38330975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956153" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1449,6 +1292,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Updated Forge to 1.7.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Forge to 1.7.10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1460,62 +1305,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forge-1.7.2-10.12.1.1060-changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33256352" vertical-offset="38055" max-vertical-offset="92956">
-          <caret line="2247" column="48" selection-start-line="2247" selection-start-column="48" selection-end-line="2247" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/creativetab/CreativeTabs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15704387" vertical-offset="0" max-vertical-offset="5372">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50073636" vertical-offset="0" max-vertical-offset="833">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/util/IIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1390593" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Textures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5960366" vertical-offset="0" max-vertical-offset="656">
-          <caret line="24" column="148" selection-start-line="24" selection-start-column="148" selection-end-line="24" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/item/ItemArmor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5525">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/libs/References.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cofh/api/energy/IEnergyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.037037037" vertical-offset="391" max-vertical-offset="969">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cofh/api/energy/ItemEnergyContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1938">
@@ -1618,13 +1407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/tileentity/TileEntityFurnace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1768" max-vertical-offset="7089">
-          <caret line="192" column="9" selection-start-line="192" selection-start-column="9" selection-end-line="192" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/inventory/SlotFurnace.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7817798" vertical-offset="1381" max-vertical-offset="1853">
@@ -1636,7 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6390133" vertical-offset="8754" max-vertical-offset="39474">
           <caret line="459" column="29" selection-start-line="459" selection-start-column="29" selection-end-line="459" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1717,13 +1498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0014727" vertical-offset="0" max-vertical-offset="1598">
-          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/items/ItemDarkGem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45066273" vertical-offset="0" max-vertical-offset="679">
@@ -1738,13 +1512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkGlass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8333333" vertical-offset="68" max-vertical-offset="748">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkDiamondBricks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
@@ -1752,42 +1519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7848101" vertical-offset="319" max-vertical-offset="1224">
-          <caret line="37" column="109" selection-start-line="37" selection-start-column="109" selection-end-line="37" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/DarkCraft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1989">
-          <caret line="90" column="65" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/block/BlockOre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
           <caret line="24" column="230" selection-start-line="24" selection-start-column="230" selection-end-line="24" selection-end-column="257" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="578">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/inventory/ICrafting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47569954" vertical-offset="0" max-vertical-offset="679">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1795,41 +1530,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="6426">
           <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-          <folding>
-            <element signature="e#3558#3559#0" expanded="true" />
-            <element signature="e#3622#3623#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkBasicFurnace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/basicFurnace/GuiBasicFurnace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246753" vertical-offset="1606" max-vertical-offset="2448">
-          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.048600882" vertical-offset="120" max-vertical-offset="918">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/basicFurnace/ContainerBasicFurnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.023564065" vertical-offset="1939" max-vertical-offset="2839">
+          <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/inventory/ICrafting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05007364" vertical-offset="0" max-vertical-offset="679">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/inventory/ContainerFurnace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="3026">
-          <caret line="71" column="95" selection-start-line="71" selection-start-column="95" selection-end-line="71" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3026">
+          <caret line="61" column="91" selection-start-line="61" selection-start-column="91" selection-end-line="61" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.2-10.12.1.1060/forgeSrc-1.7.2-10.12.1.1060-sources.jar!/net/minecraft/tileentity/TileEntityFurnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="7038">
+          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.25" vertical-offset="170" max-vertical-offset="1598">
+          <caret line="46" column="44" selection-start-line="46" selection-start-column="44" selection-end-line="46" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10_pre4-10.12.2.1137-prerelease/forgeBin-1.7.10_pre4-10.12.2.1137-prerelease.jar!/net/minecraft/block/BlockOre.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27567568" vertical-offset="0" max-vertical-offset="493">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkBasicFurnace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2465">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10_pre4-10.12.2.1137-prerelease/forgeBin-1.7.10_pre4-10.12.2.1137-prerelease.jar!/net/minecraft/block/BlockAir.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12762763" vertical-offset="0" max-vertical-offset="666">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10_pre4-10.12.2.1137-prerelease/forgeBin-1.7.10_pre4-10.12.2.1137-prerelease.jar!/net/minecraft/block/Block.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="8075">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkGlass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85125184" vertical-offset="0" max-vertical-offset="748">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10_pre4-10.12.2.1141-prerelease/forgeBin-1.7.10_pre4-10.12.2.1141-prerelease.jar!/net/minecraft/block/BlockAir.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="391">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/worldGen/EventManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7402402" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/BlockHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52577317" vertical-offset="0" max-vertical-offset="867">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/DarkCraft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="970" max-vertical-offset="1649">
+          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/GuiBasicFurnace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockWorldDarkOre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="884">
-          <caret line="43" column="57" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="74" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="289" max-vertical-offset="833">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.375" vertical-offset="0" max-vertical-offset="408">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6509573" vertical-offset="68" max-vertical-offset="1173">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/help/Gui/ContainerBasicFurnace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/turnedslayer/darkcraft/blocks/BlockDarkOre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1870" max-vertical-offset="2805">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.50073636" vertical-offset="0" max-vertical-offset="679">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

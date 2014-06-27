@@ -4,7 +4,7 @@
 Time: 20/05/14 16:37
 Description: Ticking memory connection
 
-java.lang.ClassCastException: com.turnedslayer.darkcraft.help.Gui.GuiBasicFurnace cannot be cast to net.minecraft.inventory.Container
+java.lang.ClassCastException: com.turnedslayer.darkcraft.help.Gui.basicFurnace.GuiBasicFurnace cannot be cast to net.minecraft.inventory.Container
 	at cpw.mods.fml.common.network.NetworkRegistry.getRemoteGuiContainer(NetworkRegistry.java:241)
 	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:75)
 	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2510)
