@@ -15,6 +15,11 @@ public class BlockHelper
     public static Block blockDarkFlux;
     public static Block blockDarkFluxCrystal;
     public static Block blockWorldDarkOre;
+    public static Block blockDarkGlass;
+    public static Block blockDarkBasicFurnace;
+    // public static Block blockFancy;
+    public static Block blockDarkBasicFurnaceActive;
+    public static Block BlockDarkOre;
 
 
 public static void init()
@@ -23,6 +28,10 @@ public static void init()
     blockDark = new BlockDark().setBlockName("blockDark");
     blockDarkDiamondBricks = new BlockDarkDiamondBricks().setBlockName("blockDarkDiamondBricks");
     blockWorldDarkOre = new BlockWorldDarkOre().setBlockName("blockWorldDarkOre");
+    blockDarkGlass = new BlockDarkGlass().setBlockName("blockDarkGlass");
+    GameRegistry.registerBlock(blockDarkGlass, "blockDarkGlass");
+    blockDarkBasicFurnace = new BlockDarkBasicFurnace().setBlockName("blockDarkBasicFurnace");
+    BlockDarkOre = new BlockDarkOre().setBlockName("blockDarkOre");
 
 
 }

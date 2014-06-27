@@ -3,6 +3,7 @@ package com.turnedslayer.darkcraft.items.armour;
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyContainerItem;
 import com.turnedslayer.darkcraft.DarkCraft;
+import com.turnedslayer.darkcraft.help.ItemHelper;
 import com.turnedslayer.darkcraft.libs.References;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
@@ -29,7 +30,7 @@ public class BluesteelLeggings extends ItemArmor implements IEnergyContainerItem
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
-        if(stack.getItem() == DarkCraft.BluesteelLeggings)
+        if(stack.getItem() == ItemHelper.BluesteelLeggings)
         {
             return References.MODID + ":" + "textures/models/Charged Bluesteel Layer 2.png";
         }
